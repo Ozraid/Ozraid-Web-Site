@@ -1,0 +1,14 @@
+$page_category = array ( 1 => 'page', 2 => 'article', 3 => 'resource' );
+$article_type = array (
+ 1 => 'class guide',
+ 2 => 'instance guide',
+ 3 => 'raid guide',
+ 4 => 'content guide'
+);
+$article_type = array (
+	1 => 'post',
+	2 => 'audio',
+	3 => 'image',
+	4 => 'video',
+	5 => ' '
+)

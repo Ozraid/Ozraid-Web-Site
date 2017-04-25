@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-AU" class="hidden">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+		<meta name="theme-color" content="#000000">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" /><!-- meta -->
+		<title>Ozraid | About</title>
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/icons.css">
+		<link rel="stylesheet" href="css/layout-1.css">
+		<link rel="stylesheet" href="css/cookies.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="images/favicons/manifest.json">
+		<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#000000">
+		<link rel="shortcut icon" href="images/favicons/favicon.ico">
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/page.js"></script>
+		<script type="text/javascript" src="js/login.js"></script>
+		<script type="text/javascript" src="js/cookies.js"></script>
+		<style>
+			body::after { background-image: url('images/website/overlay-white.png'), url('images/backgrounds/background-0205.jpg'); }
+			#site-header { background-image: url('images/backgrounds/background-0205.jpg'); }
+		</style>
+	</head>
+	<body>
+		<div id="site-container">
+			<header id="site-header" class="background-yellow">
+				<div id="site-identity">
+					<div id="site-title"><a href="index.html">Ozraid</a></div>
+					<div id="site-byline">A Lord of the Rings Online Raid Group &amp; Resource</div>
+				</div>
+				<div id="article-title">About</div>
+				<div id="header-login" class="text-black background-white hidden">
+					<form>
+						<label for="login">Login: </label><input type="text" name="login" /><label for="password">Password: </label><input type="password" name="password" /><input type="submit" value="Login" />
+					</form>
+					<button class="button-close button-close-right button-close-grey action-login"></button>
+				</div>
+				<nav id="primary-menu" class="background-black">
+					<ul class="background-black">
+						<div class="menu-items">
+							<li class="background-hover-red"><a href="#">Articles</a></li>
+							<li class="background-hover-orange"><a href="#" target="_blank">Resources</a></li>
+							<li class="background-hover-yellow"><a href="#about" target="_self">About</a>
+								<ul class="background-black background-hover-li-yellow">
+									<li><a href="#">Policies</a>
+									<li><a href="#">Legal</a>
+								</ul>
+							</li>
+							<li class="background-hover-green"><a href="#">Raids</a></li>
+							<li class="background-hover-blue"><a href="#">Apply/Members</a>
+								<ul class="background-black background-hover-li-blue">
+									<li><a href="#">Profile</a></li>
+									<li><a href="#">Password</a></li>
+									<li><a href="#">Characters</a></li>
+									<li><a href="#">Mail</a></li>
+								</ul>
+							</li>
+							<li class="background-hover-purple"><a href="#">Contact</a></li>
+							<li class="background-hover-grey action-login"><a>Login</a></li>
+						</div>
+						<div class="menu-icons">
+							<li><a class="media-icon-lotro-white" href="http://www.lotro.com/" title="The Lord of the Rings Online"><span>Lotro</span></a></li>
+							<li><a class="media-icon-twitter-white" href="http://www.twitter.com/" title="Ozraid | Twitter"><span>Twitter</span></a></li>
+							<li><a class="media-icon-youtube-white" href="http://www.youtube.com/" title="Ozraid | YouTube Channel"><span>YouTube</span></a></li>
+						</div>
+					</ul>
+				</nav>
+			</header>
+			<div id="site-content">
+				<h1>Layout 1</h1>
+				<p><a href="layout-1.html">Layout 1</a> | <a href="layout-2.html">Layout 2</a> | <a href="layout-3.html">Layout 3</a></p>
+				<p> - Header image scaled to 100% width and height of the [header] element</p>
+				<p> - [nav] menu is black to create a polaroid-look to the [header] element</p>
+				<p> - [header] and [div id="site-content"] background colour is solid (i.e. 100% opacity).</p>
+			</div>
+			<footer id="site-footer" class="site-footer-page background-white">
+				<div id="footer-widgets" class="background-yellow">
+					<aside class="widget-time">
+						<div class="time-day-text">Mon</div><div class="time-day-digit">17</div><div class="time-month">May</div>, <div class="time-year">2017</div><br />
+						<div class="time-hour-2">8</div> : <div class="time-min-1">5</div><div class="time-min-2">2</div> <div class="time-meridiem">pm</div>
+					</aside>
+				</div>
+				<div id="footer-byline" class="text-white background-black">Ozraid 2017</div>
+			</footer>
+		</div>
+		
+		
+		
+		<!-- #cookies start -->
+		<div id="cookies" class="hidden">
+			<div id="cookies-container"  class="hidden">
+				<button id="cookies-close" class="button-close button-close-grey action-cookies-accept"></button>
+				<div id="cookies-content">
+					<img src="images/website/400x225/cookies-400x225.jpg" alt="Cookies!">
+					<p>We use cookies on our website to provide some really cool features! They're small text files stored by your browser on your computer or device.</p>
+					<p class="cookies-text-bold">By viewing our site you agree to our use of cookies as per our policies.</p>
+					<button class="cookies-accept action-cookies-accept">Okay</button><a href="#"><button class="cookies-info">View Our Policies</button></a>
+				</div><!-- #cookies-content -->
+			</div><!-- #cookies-container -->
+		</div><!-- #cookies -->
+		<!-- #cookies end -->
+		
+		
+		
+	</body>
+</html>

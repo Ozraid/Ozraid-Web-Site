@@ -1,0 +1,88 @@
+/* CORE ELEMENTS */
+#cookies, #cookies::after {
+	position: fixed;
+	top: 0; bottom: 0; left: 0; right: 0;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+#cookies {
+	text-align: center;
+	z-index: 11;
+}
+#cookies::after {
+	content: '';
+	background-color: #000000;
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=75)';
+	filter: alpha(opacity=75);
+	opacity: 0.75;
+	z-index: 10;
+}
+#cookies p {
+	margin: 0 0 12px 0;
+	padding: 0;
+	font: 18px 'Humanst521 BT';
+	color: #212222;
+	line-height: 1.2;
+}
+#cookies p.cookies-text-bold {
+	font: 18px 'Humanst521 BT Bold';
+}
+#cookies a {
+	display: inline-block;
+	width: auto;
+	text-decoration: none;
+}
+#cookies img {
+	display: block;
+	width: 100%;
+	margin: 0 0 20px 0;
+}
+
+/* COOKIES CONTAINER ELEMENTS */
+#cookies-container {
+	position: relative;
+	top: 50%; left: 0;
+	transform: translate(0, -50%);
+	max-width: 448px;
+	margin: 20px auto;
+	background-color: #ffffff;
+	z-index: 11;
+}
+#cookies-content {
+	padding: 24px;
+	background-color: #ffffff;
+	text-align: left;
+}
+
+/* BUTTONS */
+#cookies button {
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+#cookies-close {
+	position: absolute;
+	top: 0; right: 0;
+	width: 24px;
+	height: 24px;
+	z-index: 11;
+}
+#cookies-content button {
+	margin: 0 15px 0 0;
+	padding: 5px 10px;
+	font: 15px 'Open Sans Bold';
+	color: #ffffff;
+	-o-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+	border: 1px solid #8a8a8a;
+}
+#cookies-content button:hover { border: 1px solid #cccccc; }
+.cookies-accept { background-color: #228b22; }
+.cookies-accept:hover { background-color: #54bd54; }
+.cookies-info { background-color: #c41e3a; }
+.cookies-info:hover { background-color: #f6506c; }

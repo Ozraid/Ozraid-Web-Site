@@ -1,0 +1,203 @@
+html {
+	width: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+}
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	white-space: nowrap;
+}
+
+a {
+	-moz-transition: color .5s linear;
+	-webkit-transition: color .5s linear;
+	transition: color .5s linear;
+	text-decoration: none;
+}
+
+#site-conatiner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #ffffff;
+}
+
+#site-header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: calc(100% - 200px);
+	margin-left: 200px;
+	font: 18px 'Humanst521 BT Light';
+	clear: both;
+	z-index: 1;
+}
+#site-header a, #site-menu-left a {
+	display: inline-block;
+	width: calc(100% - 65px);
+	color: #ffffff;
+}
+#site-header a {
+	height: 24px;
+	padding: 10px 15px;
+}
+#site-menu-left a {
+	min-height: 24px;
+	padding: 10px 15px 10px 50px;
+}
+#primary-menu ul {
+	float: right;
+}
+#primary-menu li {
+	display: inline-block;
+	float: left;
+}
+
+#admin-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	font: 18px 'Humanst521 BT Light';
+	z-index: 1;
+}
+
+#admin-menu li {
+	position: relative;
+	display: block;
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #cccccc;
+}
+
+#admin-menu li ul {
+	display: none;
+	position: absolute;
+	left: 200px;
+	top: -1px;
+	border: 1px solid #cccccc;
+}
+
+#admin-menu li:hover ul {
+	display: block;
+}
+
+#admin-menu li ul li:last-child {
+	border-bottom: 0px solid #cccccc;
+}
+
+#site-title {
+	font: 18px 'Tragan Pro';
+	text-shadow: 1px 1px 1px #cccccc;
+}
+
+
+/* COLOURS */
+/* Text Colours */
+.text-red, .links-red a {
+	color: #c41e3a;
+}
+.text-orange, .links-orange a {
+	color: #ee7f2d;
+}
+.text-yellow, .links-yellow a {
+	color: #daa520;
+}
+.text-green, .links-green a {
+	color: #228b22;
+}
+.text-blue, .links-blue a {
+	color: #0f52ba;
+}
+.text-purple, .links-purple a {
+	color: #7851a9;
+}
+.text-violet, .links-violet a {
+	color: #ba55d3;
+}
+.text-grey, .links-grey a {
+	color: #a4a4a4;
+}
+.text-white {
+	color: #ffffff;
+}
+.text-black {
+	color: #000000;
+}
+
+/* Link Hover Colours */
+.links-red a:hover {
+	color: #f6506c;
+}
+.links-orange a:hover {
+	color: #ffa755;
+}
+.links-yellow a:hover {
+	color: #ffcd48;
+}
+.links-green a:hover {
+	color: #54bd54;
+}
+.links-blue a:hover {
+	color: #4b8ef6;
+}
+.links-purple a:hover {
+	color: #aa83db;
+}
+.links-violet a:hover {
+	color: #e27dfb;
+}
+.links-grey a:hover {
+	color: #cccccc;
+}
+
+/* Background Colours */
+.background-red, .background-hover-red:hover { 
+	background-color: #c41e3a;
+}
+.background-orange, .background-hover-orange:hover {
+	background-color: #ee7f2d;
+}
+.background-yellow, .background-hover-yellow:hover {
+	background-color: #daa520;
+}
+.background-green, .background-hover-green:hover {
+	background-color: #228b22;
+}
+.background-blue, .background-hover-blue:hover {
+	background-color: #0f52ba;
+}
+.background-purple, .background-hover-purple:hover {
+	background-color: #7851a9;
+}
+.background-violet, .background-hover-violet:hover {
+	background-color: #ba55d3;
+}
+.background-white, .background-hover-white:hover {
+	background-color: #ffffff;
+}
+.background-grey, .background-hover-grey:hover {
+	background-color: #8a8a8a;
+}
+.background-grey-light {
+	background-color: #e7e7e7;
+}
+.background-black, .background-hover-black:hover {
+	background-color: #000000;
+}
+
+.transition-background,
+nav li {
+	-moz-transition: background .5s linear;
+	-webkit-transition: background .5s linear;
+	transition: background .5s linear;
+}
+
+.hidden {
+	display: none;
+}

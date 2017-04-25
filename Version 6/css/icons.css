@@ -1,0 +1,182 @@
+/* ICON CLASSES */
+
+/* <nav> <li> Social Media Icons: Positioning */
+.media-icon-lotro-white::after, .media-icon-lotro-grey::after,
+.media-icon-twitter-white::after, .media-icon-twitter-grey::after,
+.media-icon-youtube-white::after, .media-icon-youtube-grey::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	width: 24px;
+	height: 24px;
+	-o-transition: opacity .5s linear;
+	-moz-transition: opacity .5s linear;
+	-webkit-transition: opacity .5s linear;
+	transition: opacity .5s linear;
+}
+
+/* <nav> <li> Menu Icons: Positioning */
+.menu-icon-lotro-white::after, .menu-icon-twitter-white::after, .menu-icon-youtube-white::after,
+.menu-icon-pages-white::after, .menu-icon-page-white::after, .menu-icon-page-edit-white::after,
+.menu-icon-articles-white::after, .menu-icon-article-white::after, .menu-icon-article-edit-white::after,
+.menu-icon-users-white::after, .menu-icon-user-white::after, .menu-icon-user-edit-white::after,
+.menu-icon-characters-white::after, .menu-icon-password-white::after, .menu-icon-search-white::after,
+.menu-icon-resources-white::after, .menu-icon-resource-white::after, .menu-icon-categories-white::after,
+.menu-icon-links-white::after, .menu-icon-raid-times-white::after, .menu-icon-apply-white::after,
+.menu-icon-communication-white::after, .menu-icon-mail-white::after, .menu-icon-mobile-white::after,
+.menu-icon-list-1-white::after, .menu-icon-list-2-white::after, .menu-icon-list-3-white::after,
+.menu-icon-uploads-white::after, .menu-icon-downloads-white::after, .menu-icon-rotation-white::after,
+.menu-icon-faq-white::after, .menu-icon-faq-edit-white::after, .menu-icon-mail-send-white::after,
+.menu-icon-media-white::after, .menu-icon-media-library-white::after, .menu-icon-tools-white::after,
+.menu-icon-graph-1-white::after, .menu-icon-graph-2-white::after, .menu-icon-graph-3-white::after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 15px;
+	width: 24px;
+	height: 24px;
+}
+
+/* OPACITY */
+.media-icon-lotro-white:hover::after, .media-icon-lotro-grey:hover::after,
+.media-icon-twitter-white:hover::after, .media-icon-twitter-grey:hover::after,
+.media-icon-youtube-white:hover::after, .media-icon-youtube-grey:hover::after {
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=100)';
+	filter: alpha(opacity=100);
+	opacity: 1;
+}
+.media-icon-lotro-white::after, .media-icon-lotro-grey::after, 
+.media-icon-twitter-white::after, .media-icon-twitter-grey::after,
+.media-icon-youtube-white::after, .media-icon-youtube-grey::after {
+	-ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(Opacity=0)';
+	filter: alpha(opacity=0);
+	opacity: 0;
+}
+
+/* BACKGROUNDS: ICONS */
+/* Close Button: 24px x 24px */
+.button-close-white { background: url('../images/sprites/sprite-buttons.png') 0 -40px; }
+.button-close-grey { background: url('../images/sprites/sprite-buttons.png') -24px -40px; }
+.button-close-black { background: url('../images/sprites/sprite-buttons.png') -48px -40px; }
+
+/* Social Media Icons: 24px x 24px */
+.icon-lotro-white, .media-icon-lotro-white, .menu-icon-lotro-white::after { background: url('../images/sprites/sprite-menu.png') 0 0; }
+.icon-lotro-grey, .media-icon-lotro-grey, .menu-icon-lotro-grey::after { background: url('../images/sprites/sprite-menu.png') -24px 0; }
+.icon-lotro-colour, .media-icon-lotro-white::after, .media-icon-lotro-grey::after { background: url('../images/sprites/sprite-menu.png') -48px 0; }
+.icon-twitter-white, .media-icon-twitter-white, .menu-icon-twitter-white::after { background: url('../images/sprites/sprite-menu.png') -72px 0; }
+.icon-twitter-grey, .media-icon-twitter-grey, .menu-icon-twitter-grey::after { background: url('../images/sprites/sprite-menu.png') -96px 0; }
+.icon-twitter-colour, .media-icon-twitter-white::after, .media-icon-twitter-grey::after { background: url('../images/sprites/sprite-menu.png') -120px 0; }
+.icon-youtube-white, .media-icon-youtube-white, .menu-icon-youtube-white::after { background: url('../images/sprites/sprite-menu.png') -144px 0; }
+.icon-youtube-grey, .media-icon-youtube-grey, .menu-icon-youtube-grey::after { background: url('../images/sprites/sprite-menu.png') -168px 0; }
+.icon-youtube-colour, .media-icon-youtube-white::after, .media-icon-youtube-grey::after { background: url('../images/sprites/sprite-menu.png') -192px 0; }
+
+/* Menu Icons: 24px x 24px */
+.icon-pages-white, .menu-icon-pages-white::after { background: url('../images/sprites/sprite-menu.png') 0 -24px; }
+.icon-pages-grey, .menu-icon-pages-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -24px; }
+.icon-pages-black, .menu-icon-pages-black::after { background: url('../images/sprites/sprite-menu.png') -48px -24px; }
+.icon-page-white, .menu-icon-page-white::after { background: url('../images/sprites/sprite-menu.png') -72px -24px; }
+.icon-page-grey, .menu-icon-page-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -24px; }
+.icon-page-black, .menu-icon-page-black::after { background: url('../images/sprites/sprite-menu.png') -120px -24px; }
+.icon-page-edit-white, .menu-icon-page-edit-white::after { background: url('../images/sprites/sprite-menu.png') -144px -24px; }
+.icon-page-edit-grey, .menu-icon-page-edit-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -24px; }
+.icon-page-edit-black, .menu-icon-page-edit-black::after { background: url('../images/sprites/sprite-menu.png') -192px -24px; }
+.icon-articles-white, .menu-icon-articles-white::after { background: url('../images/sprites/sprite-menu.png') 0 -48px; }
+.icon-articles-grey, .menu-icon-articles-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -48px; }
+.icon-articles-black, .menu-icon-articles-black::after { background: url('../images/sprites/sprite-menu.png') -48px -48px; }
+.icon-article-white, .menu-icon-article-white::after { background: url('../images/sprites/sprite-menu.png') -72px -48px; }
+.icon-article-grey, .menu-icon-article-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -48px; }
+.icon-article-black, .menu-icon-article-black::after { background: url('../images/sprites/sprite-menu.png') -120px -48px; }
+.icon-article-edit-white, .menu-icon-article-edit-white::after { background: url('../images/sprites/sprite-menu.png') -144px -48px; }
+.icon-article-edit-grey, .menu-icon-article-edit-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -48px; }
+.icon-article-edit-black, .menu-icon-article-edit-black::after { background: url('../images/sprites/sprite-menu.png') -192px -48px; }
+.icon-users-white, .menu-icon-users-white::after { background: url('../images/sprites/sprite-menu.png') 0 -72px; }
+.icon-users-grey, .menu-icon-users-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -72px; }
+.icon-users-black, .menu-icon-users-black::after { background: url('../images/sprites/sprite-menu.png') -48px -72px; }
+.icon-user-white, .menu-icon-user-white::after { background: url('../images/sprites/sprite-menu.png') -72px -72px; }
+.icon-user-grey, .menu-icon-user-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -72px; }
+.icon-user-black, .menu-icon-user-black::after { background: url('../images/sprites/sprite-menu.png') -120px -72px; }
+.icon-user-edit-white, .menu-icon-user-edit-white::after { background: url('../images/sprites/sprite-menu.png') -144px -72px; }
+.icon-user-edit-grey, .menu-icon-user-edit-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -72px; }
+.icon-user-edit-black, .menu-icon-user-edit-black::after { background: url('../images/sprites/sprite-menu.png') -192px -72px; }
+.icon-characters-white, .menu-icon-characters-white::after { background: url('../images/sprites/sprite-menu.png') 0 -96px; }
+.icon-characters-grey, .menu-icon-characters-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -96px; }
+.icon-characters-black, .menu-icon-characters-black::after { background: url('../images/sprites/sprite-menu.png') -48px -96px; }
+.icon-password-white, .menu-icon-password-white::after { background: url('../images/sprites/sprite-menu.png') -72px -96px; }
+.icon-password-grey, .menu-icon-password-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -96px; }
+.icon-password-black, .menu-icon-password-black::after { background: url('../images/sprites/sprite-menu.png') -120px -96px; }
+.icon-search-white, .menu-icon-search-white::after { background: url('../images/sprites/sprite-menu.png') -144px -96px; }
+.icon-search-grey, .menu-icon-search-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -96px; }
+.icon-search-black, .menu-icon-search-black::after { background: url('../images/sprites/sprite-menu.png') -192px -96px; }
+.icon-resources-white, .menu-icon-resources-white::after { background: url('../images/sprites/sprite-menu.png') 0 -120px; }
+.icon-resources-grey, .menu-icon-resources-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -120px; }
+.icon-resources-black, .menu-icon-resources-black::after { background: url('../images/sprites/sprite-menu.png') -48px -120px; }
+.icon-resource-white, .menu-icon-resource-white::after { background: url('../images/sprites/sprite-menu.png') -72px -120px; }
+.icon-resource-grey, .menu-icon-resource-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -120px; }
+.icon-resource-black, .menu-icon-resource-black::after { background: url('../images/sprites/sprite-menu.png') -120px -120px; }
+.icon-categories-white, .menu-icon-categories-white::after { background: url('../images/sprites/sprite-menu.png') -144px -120px; }
+.icon-categories-grey, .menu-icon-categories-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -120px; }
+.icon-categories-black, .menu-icon-categories-black::after { background: url('../images/sprites/sprite-menu.png') -192px -120px; }
+.icon-links-white, .menu-icon-links-white::after { background: url('../images/sprites/sprite-menu.png') 0 -144px; }
+.icon-links-grey, .menu-icon-links-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -144px; }
+.icon-links-black, .menu-icon-links-black::after { background: url('../images/sprites/sprite-menu.png') -48px -144px; }
+.icon-raid-times-white, .menu-icon-raid-times-white::after { background: url('../images/sprites/sprite-menu.png') -72px -144px; }
+.icon-raid-times-grey, .menu-icon-raid-times-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -144px; }
+.icon-raid-times-black, .menu-icon-raid-times-black::after { background: url('../images/sprites/sprite-menu.png') -120px -144px; }
+.icon-apply-white, .menu-icon-apply-white::after { background: url('../images/sprites/sprite-menu.png') -144px -144px; }
+.icon-apply-grey, .menu-icon-apply-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -144px; }
+.icon-apply-black, .menu-icon-apply-black::after { background: url('../images/sprites/sprite-menu.png') -192px -144px; }
+.icon-communication-white, .menu-icon-communication-white::after { background: url('../images/sprites/sprite-menu.png') 0 -168px; }
+.icon-communication-grey, .menu-icon-communication-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -168px; }
+.icon-communication-black, .menu-icon-communication-black::after { background: url('../images/sprites/sprite-menu.png') -48px -168px; }
+.icon-mail-white, .menu-icon-mail-white::after { background: url('../images/sprites/sprite-menu.png') -72px -168px; }
+.icon-mail-grey, .menu-icon-mail-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -168px; }
+.icon-mail-black, .menu-icon-mail-black::after { background: url('../images/sprites/sprite-menu.png') -120px -168px; }
+.icon-mobile-white, .menu-icon-mobile-white::after { background: url('../images/sprites/sprite-menu.png') -144px -168px; }
+.icon-mobile-grey, .menu-icon-mobile-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -168px; }
+.icon-mobile-black, .menu-icon-mobile-black::after { background: url('../images/sprites/sprite-menu.png') -192px -168px; }
+.icon-list-1-white, .menu-icon-list-1-white::after { background: url('../images/sprites/sprite-menu.png') 0 -192px; }
+.icon-list-1-grey, .menu-icon-list-1-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -192px; }
+.icon-list-1-black, .menu-icon-list-1-black::after { background: url('../images/sprites/sprite-menu.png') -48px -192px; }
+.icon-list-2-white, .menu-icon-list-2-white::after { background: url('../images/sprites/sprite-menu.png') -72px -192px; }
+.icon-list-2-grey, .menu-icon-list-2-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -192px; }
+.icon-list-2-black, .menu-icon-list-2-black::after { background: url('../images/sprites/sprite-menu.png') -120px -192px; }
+.icon-list-3-white, .menu-icon-list-3-white::after { background: url('../images/sprites/sprite-menu.png') -144px -192px; }
+.icon-list-3-grey, .menu-icon-list-3-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -192px; }
+.icon-list-3-black, .menu-icon-list-3-black::after { background: url('../images/sprites/sprite-menu.png') -192px -192px; }
+.icon-uploads-white, .menu-icon-uploads-white::after { background: url('../images/sprites/sprite-menu.png') 0 -216px; }
+.icon-uploads-grey, .menu-icon-uploads-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -216px; }
+.icon-uploads-black, .menu-icon-uploads-black::after { background: url('../images/sprites/sprite-menu.png') -48px -216px; }
+.icon-downloads-white, .menu-icon-downloads-white::after { background: url('../images/sprites/sprite-menu.png') -72px -216px; }
+.icon-downloads-grey, .menu-icon-downloads-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -216px; }
+.icon-downloads-black, .menu-icon-downloads-black::after { background: url('../images/sprites/sprite-menu.png') -120px -216px; }
+.icon-rotation-white, .menu-icon-rotation-white::after { background: url('../images/sprites/sprite-menu.png') -144px -216px; }
+.icon-rotation-grey, .menu-icon-rotation-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -216px; }
+.icon-rotation-black, .menu-icon-rotation-black::after { background: url('../images/sprites/sprite-menu.png') -192px -216px; }
+.icon-faq-white, .menu-icon-faq-white::after { background: url('../images/sprites/sprite-menu.png') 0 -240px; }
+.icon-faq-grey, .menu-icon-faq-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -240px; }
+.icon-faq-black, .menu-icon-faq-black::after { background: url('../images/sprites/sprite-menu.png') -48px -240px; }
+.icon-faq-edit-white, .menu-icon-faq-edit-white::after { background: url('../images/sprites/sprite-menu.png') -72px -240px; }
+.icon-faq-edit-grey, .menu-icon-faq-edit-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -240px; }
+.icon-faq-edit-black, .menu-icon-faq-edit-black::after { background: url('../images/sprites/sprite-menu.png') -120px -240px; }
+.icon-mail-send-white, .menu-icon-mail-send-white::after { background: url('../images/sprites/sprite-menu.png') -144px -240px; }
+.icon-mail-send-grey, .menu-icon-mail-send-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -240px; }
+.icon-mail-send-black, .menu-icon-mail-send-black::after { background: url('../images/sprites/sprite-menu.png') -192px -240px; }
+.icon-media-white, .menu-icon-media-white::after { background: url('../images/sprites/sprite-menu.png') 0 -264px; }
+.icon-media-grey, .menu-icon-media-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -264px; }
+.icon-media-black, .menu-icon-media-black::after { background: url('../images/sprites/sprite-menu.png') -48px -264px; }
+.icon-media-library-white, .menu-icon-media-library-white::after { background: url('../images/sprites/sprite-menu.png') -72px -264px; }
+.icon-media-library-grey, .menu-icon-media-library-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -264px; }
+.icon-media-library-black, .menu-icon-media-library-black::after { background: url('../images/sprites/sprite-menu.png') -120px -264px; }
+.icon-tools-white, .menu-icon-tools-white::after { background: url('../images/sprites/sprite-menu.png') -144px -264px; }
+.icon-tools-grey, .menu-icon-tools-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -264px; }
+.icon-tools-black, .menu-icon-tools-black::after { background: url('../images/sprites/sprite-menu.png') -192px -264px; }
+.icon-graph-1-white, .menu-icon-graph-1-white::after { background: url('../images/sprites/sprite-menu.png') 0 -288px; }
+.icon-graph-1-grey, .menu-icon-graph-1-grey::after { background: url('../images/sprites/sprite-menu.png') -24px -288px; }
+.icon-graph-1-black, .menu-icon-graph-1-black::after { background: url('../images/sprites/sprite-menu.png') -48px -288px; }
+.icon-graph-2-white, .menu-icon-graph-2-white::after { background: url('../images/sprites/sprite-menu.png') -72px -288px; }
+.icon-graph-2-grey, .menu-icon-graph-2-grey::after { background: url('../images/sprites/sprite-menu.png') -96px -288px; }
+.icon-graph-2-black, .menu-icon-graph-2-black::after { background: url('../images/sprites/sprite-menu.png') -120px -288px; }
+.icon-graph-3-white, .menu-icon-graph-3-white::after { background: url('../images/sprites/sprite-menu.png') -144px -288px; }
+.icon-graph-3-grey, .menu-icon-graph-3-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -288px; }
+.icon-graph-3-black, .menu-icon-graph-3-black::after { background: url('../images/sprites/sprite-menu.png') -192px -288px; }

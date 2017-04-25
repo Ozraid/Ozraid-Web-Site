@@ -1,0 +1,141 @@
+/* FONTS */
+
+/* Courier New */
+@font-face {
+	font-family: 'Courier New';
+	src: url('../fonts/courier-new-regular.eot');
+	src: url('../fonts/courier-new-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/courier-new-regular.woff2') format('woff2'),
+		url('../fonts/courier-new-regular.woff') format('woff'),
+		url('../fonts/courier-new-regular.ttf'),
+		url('../fonts/courier-new-regular.svg#courier-new-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Courier New Bold';
+	src: url('../fonts/courier-new-bold.eot');
+	src: url('../fonts/courier-new-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/courier-new-bold.woff2') format('woff2'),
+		url('../fonts/courier-new-bold.woff') format('woff'),
+		url('../fonts/courier-new-bold.ttf'),
+		url('../fonts/courier-new-bold.svg#courier-new-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Courier New Italic';
+	src: url('../fonts/courier-new-italic.eot');
+	src: url('../fonts/courier-new-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/courier-new-italic.woff2') format('woff2'),
+		url('../fonts/courier-new-italic.woff') format('woff'),
+		url('../fonts/courier-new-italic.ttf'),
+		url('../fonts/courier-new-italic.svg#courier-new-italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Courier New Bold Italic';
+	src: url('../fonts/courier-new-bold-italic.eot');
+	src: url('../fonts/courier-new-bold-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/courier-new-bold-italic.woff2') format('woff2'),
+		url('../fonts/courier-new-bold-italic.woff') format('woff'),
+		url('../fonts/courier-new-bold-italic.ttf'),
+		url('../fonts/courier-new-bold-italic.svg#Courier New Bold Italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Courier New */
+@font-face {
+	font-family: 'Open Sans';
+	src: url('../fonts/open-sans-regular.eot');
+	src: url('../fonts/open-sans-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-regular.woff2') format('woff2'),
+		url('../fonts/open-sans-regular.woff') format('woff'),
+		url('../fonts/open-sans-regular.ttf'),
+		url('../fonts/open-sans-regular.svg#open-sans-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/open-sans-bold.eot');
+	src: url('../fonts/open-sans-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-bold.woff2') format('woff2'),
+		url('../fonts/open-sans-bold.woff') format('woff'),
+		url('../fonts/open-sans-bold.ttf'),
+		url('../fonts/open-sans-bold.svg#open-sans-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Italic';
+	src: url('../fonts/open-sans-italic.eot');
+	src: url('../fonts/open-sans-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-italic.woff2') format('woff2'),
+		url('../fonts/open-sans-italic.woff') format('woff'),
+		url('../fonts/open-sans-italic.ttf'),
+		url('../fonts/open-sans-italic.svg#open-sans-italic') format('svg');
+		font-weight: normal;
+		font-style: normal;
+}
+@font-face {
+	font-family: 'Open Sans Bold Italic';
+	src: url('../fonts/open-sans-bold-italic.eot');
+	src: url('../fonts/open-sans-bold-italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/open-sans-bold-italic.woff2') format('woff2'),
+		url('../fonts/open-sans-bold-italic.woff') format('woff'),
+		url('../fonts/open-sans-bold-italic.ttf'),
+		url('../fonts/open-sans-bold-italic.svg#open-sansbold-italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Humanst521 BT */
+@font-face {
+	font-family: 'Humanst521 BT';
+	src: url('../fonts/humanst521-bt-regular.eot');
+	src: url('../fonts/humanst521-bt-regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/humanst521-bt-regular.woff2') format('woff2'),
+		url('../fonts/humanst521-bt-regular.woff') format('woff'),
+		url('../fonts/humanst521-bt-regular.ttf'),
+		url('../fonts/humanst521-bt-regular.svg#humanst521-bt-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Humanst521 BT Light';
+	src: url('../fonts/humanst521-bt-light.eot');
+	src: url('../fonts/humanst521-bt-light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/humanst521-bt-light.woff2') format('woff2'),
+		url('../fonts/humanst521-bt-light.woff') format('woff'),
+		url('../fonts/humanst521-bt-light.ttf'),
+		url('../fonts/humanst521-bt-light.svg#humanst521-bt-light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Humanst521 BT Bold';
+	src: url('../fonts/humanst521-bt-bold.eot');
+	src: url('../fonts/humanst521-bt-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/humanst521-bt-bold.woff2') format('woff2'),
+		url('../fonts/humanst521-bt-bold.woff') format('woff'),
+		url('../fonts/humanst521-bt-bold.ttf'),
+		url('../fonts/humanst521-bt-bold.svg#humanst521-bt-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Tragan Pro */
+@font-face {
+	font-family: 'Tragan Pro';
+	src: url('../fonts/tragan-pro-bold.eot');
+	src: url('../fonts/tragan-pro-bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/tragan-pro-bold.woff2') format('woff2'),
+		url('../fonts/tragan-pro-bold.woff') format('woff'),
+		url('../fonts/tragan-pro-bold.ttf'),
+		url('../fonts/tragan-pro-bold.svg#tragan-pro-bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
