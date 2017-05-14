@@ -1,19 +1,44 @@
 /* ICON CLASSES */
 
+/* <button> Close Button: Positioning */
+.button-close-left, .button-close-right, .button-close::after {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+}
+.button-close::after {
+	content: '';
+	top: 0; left: 0;
+	-o-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+.button-close-left { top: calc(50% - 12px); left: 10px; }
+.button-close-right { top: calc(50% - 12px); right: 10px; }
+
+/* <figure> Pin: Poisitioning */
+.background-pin-red::after, .background-pin-orange::after, .background-pin-yellow::after, .background-pin-green::after, .background-pin-blue::after, .background-pin-purple::after, .background-pin-violet::after, .background-pin-white::after, .background-pin-grey::after, .background-pin-black::after {
+	content: '';
+	position: absolute;
+	top: 0; left: calc(50% - 12px);
+	width: 24px;
+	height: 24px;
+}
+
 /* <nav> <li> Social Media Icons: Positioning */
 .media-icon-lotro-white::after, .media-icon-lotro-grey::after,
 .media-icon-twitter-white::after, .media-icon-twitter-grey::after,
 .media-icon-youtube-white::after, .media-icon-youtube-grey::after {
 	content: '';
 	position: absolute;
-	top: 10px;
-	left: 10px;
+	top: 10px; left: 10px;
 	width: 24px;
 	height: 24px;
-	-o-transition: opacity .5s linear;
-	-moz-transition: opacity .5s linear;
-	-webkit-transition: opacity .5s linear;
-	transition: opacity .5s linear;
+	-o-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 }
 
 /* <nav> <li> Menu Icons: Positioning */
@@ -39,6 +64,7 @@
 }
 
 /* OPACITY */
+.button-close-white:hover::after, .button-close-grey:hover::after,
 .media-icon-lotro-white:hover::after, .media-icon-lotro-grey:hover::after,
 .media-icon-twitter-white:hover::after, .media-icon-twitter-grey:hover::after,
 .media-icon-youtube-white:hover::after, .media-icon-youtube-grey:hover::after {
@@ -46,6 +72,7 @@
 	filter: alpha(opacity=100);
 	opacity: 1;
 }
+.button-close-white::after, .button-close-grey::after,
 .media-icon-lotro-white::after, .media-icon-lotro-grey::after, 
 .media-icon-twitter-white::after, .media-icon-twitter-grey::after,
 .media-icon-youtube-white::after, .media-icon-youtube-grey::after {
@@ -54,11 +81,67 @@
 	opacity: 0;
 }
 
-/* BACKGROUNDS: ICONS */
-/* Close Button: 24px x 24px */
-.button-close-white { background: url('../images/sprites/sprite-buttons.png') 0 -40px; }
-.button-close-grey { background: url('../images/sprites/sprite-buttons.png') -24px -40px; }
-.button-close-black { background: url('../images/sprites/sprite-buttons.png') -48px -40px; }
+/* BACKGROUNDS */
+/* colours */
+.button-close-white:hover::after, .button-close-grey:hover::after, .button-close-black:hover::after {
+	background-color: #da2141;
+}
+
+/* Buttons: 24px x 24px */
+.icon-close-red, .button-close-red { background: url('../images/sprites/sprite-buttons.png') 0 -40px; }
+.icon-close-orange, .button-close-orange { background: url('../images/sprites/sprite-buttons.png') 0 -64px; }
+.icon-close-yellow, .button-close-yellow { background: url('../images/sprites/sprite-buttons.png') 0 -88px; }
+.icon-close-green, .button-close-green { background: url('../images/sprites/sprite-buttons.png') 0 -112px; }
+.icon-close-blue, .button-close-blue { background: url('../images/sprites/sprite-buttons.png') 0 -136px; }
+.icon-close-purple, .button-close-purple { background: url('../images/sprites/sprite-buttons.png') 0 -160px; }
+.icon-close-violet, .button-close-violet { background: url('../images/sprites/sprite-buttons.png') 0 -184px; }
+.icon-close-white, .button-close-white, .button-close-white::after, .button-close-grey::after, .button-close-black::after { background: url('../images/sprites/sprite-buttons.png') 0 -208px; }
+.icon-close-grey, .button-close-grey { background: url('../images/sprites/sprite-buttons.png') 0 -232px; }
+.icon-close-black, .button-close-white::after { background: url('../images/sprites/sprite-buttons.png') 0 -256px; }
+.icon-check-red { background: url('../images/sprites/sprite-buttons.png') -24px -40px; }
+.icon-check-orange { background: url('../images/sprites/sprite-buttons.png') -24px -64px; }
+.icon-check-yellow { background: url('../images/sprites/sprite-buttons.png') -24px -88px; }
+.icon-check-green { background: url('../images/sprites/sprite-buttons.png') -24px -112px; }
+.icon-check-blue { background: url('../images/sprites/sprite-buttons.png') -24px -136px; }
+.icon-check-purple { background: url('../images/sprites/sprite-buttons.png') -24px -160px; }
+.icon-check-violet { background: url('../images/sprites/sprite-buttons.png') -24px -184px; }
+.icon-check-white { background: url('../images/sprites/sprite-buttons.png') -24px -208px; }
+.icon-check-grey { background: url('../images/sprites/sprite-buttons.png') -24px -232px; }
+.icon-check-black { background: url('../images/sprites/sprite-buttons.png') -24px -256px; }
+.icon-pin-red, .background-pin-red::after { background: url('../images/sprites/sprite-buttons.png') -72px -40px; }
+.icon-pin-orange, .background-pin-orange::after { background: url('../images/sprites/sprite-buttons.png') -72px -64px; }
+.icon-pin-yellow, .background-pin-yellow::after { background: url('../images/sprites/sprite-buttons.png') -72px -88px; }
+.icon-pin-green, .background-pin-green::after { background: url('../images/sprites/sprite-buttons.png') -72px -112px; }
+.icon-pin-blue, .background-pin-blue::after { background: url('../images/sprites/sprite-buttons.png') -72px -136px; }
+.icon-pin-purple, .background-pin-purple::after { background: url('../images/sprites/sprite-buttons.png') -72px -160px; }
+.icon-pin-violet, .background-pin-violet::after { background: url('../images/sprites/sprite-buttons.png') -72px -184px; }
+.icon-pin-white, .background-pin-white::after { background: url('../images/sprites/sprite-buttons.png') -72px -208px; }
+.icon-pin-grey, .background-pin-grey::after { background: url('../images/sprites/sprite-buttons.png') -72px -232px; }
+.icon-pin-black, .background-pin-black::after { background: url('../images/sprites/sprite-buttons.png') -72px -256px; }
+
+/* Checkbox Buttons: 24px x 24px */
+input[type='checkbox']:checked + .checkbox-red::after { background: url('../images/sprites/sprite-buttons.png') -26px -42px; }
+input[type='checkbox']:checked + .checkbox-orange::after { background: url('../images/sprites/sprite-buttons.png') -26px -66px; }
+input[type='checkbox']:checked + .checkbox-yellow::after { background: url('../images/sprites/sprite-buttons.png') -26px -90px; }
+input[type='checkbox']:checked + .checkbox-green::after { background: url('../images/sprites/sprite-buttons.png') -26px -114px; }
+input[type='checkbox']:checked + .checkbox-blue::after { background: url('../images/sprites/sprite-buttons.png') -26px -138px; }
+input[type='checkbox']:checked + .checkbox-purple::after { background: url('../images/sprites/sprite-buttons.png') -26px -162px; }
+input[type='checkbox']:checked + .checkbox-violet::after { background: url('../images/sprites/sprite-buttons.png') -26px -186px; }
+input[type='checkbox']:checked + .checkbox-white::after { background: url('../images/sprites/sprite-buttons.png') -26px -210px; }
+input[type='checkbox']:checked + .checkbox-grey::after { background: url('../images/sprites/sprite-buttons.png') -26px -234px; }
+input[type='checkbox']:checked + .checkbox-black::after { background: url('../images/sprites/sprite-buttons.png') -26px -258px; }
+
+/* Radio Buttons: 24px x 24px */
+input[type='radio']:checked + .radio-red::after { background: url('../images/sprites/sprite-buttons.png') -50px -42px; }
+input[type='radio']:checked + .radio-orange::after { background: url('../images/sprites/sprite-buttons.png') -50px -66px; }
+input[type='radio']:checked + .radio-yellow::after { background: url('../images/sprites/sprite-buttons.png') -50px -90px; }
+input[type='radio']:checked + .radio-green::after { background: url('../images/sprites/sprite-buttons.png') -50px -114px; }
+input[type='radio']:checked + .radio-blue::after { background: url('../images/sprites/sprite-buttons.png') -50px -138px; }
+input[type='radio']:checked + .radio-purple::after { background: url('../images/sprites/sprite-buttons.png') -50px -162px; }
+input[type='radio']:checked + .radio-violet::after { background: url('../images/sprites/sprite-buttons.png') -50px -186px; }
+input[type='radio']:checked + .radio-white::after { background: url('../images/sprites/sprite-buttons.png') -50px -210px; }
+input[type='radio']:checked + .radio-grey::after { background: url('../images/sprites/sprite-buttons.png') -50px -234px; }
+input[type='radio']:checked + .radio-black::after { background: url('../images/sprites/sprite-buttons.png') -50px -258px; }
 
 /* Social Media Icons: 24px x 24px */
 .icon-lotro-white, .media-icon-lotro-white, .menu-icon-lotro-white::after { background: url('../images/sprites/sprite-menu.png') 0 0; }
@@ -180,3 +263,246 @@
 .icon-graph-3-white, .menu-icon-graph-3-white::after { background: url('../images/sprites/sprite-menu.png') -144px -288px; }
 .icon-graph-3-grey, .menu-icon-graph-3-grey::after { background: url('../images/sprites/sprite-menu.png') -168px -288px; }
 .icon-graph-3-black, .menu-icon-graph-3-black::after { background: url('../images/sprites/sprite-menu.png') -192px -288px; }
+
+/* Timezone Icons: 48px x 48px */
+.icon-timezone-25 { background: url('../images/sprites/sprite-timezones.png') 0 0; } /* Afghanistan */
+.icon-timezone-26 { background: url('../images/sprites/sprite-timezones.png') 0 -48px; } /* Aland */
+.icon-timezone-27 { background: url('../images/sprites/sprite-timezones.png') 0 -96px; } /* Albania */
+.icon-timezone-28 { background: url('../images/sprites/sprite-timezones.png') 0 -144px; } /* Algeria */
+.icon-timezone-29 { background: url('../images/sprites/sprite-timezones.png') 0 -192px; } /* American Samoa */
+.icon-timezone-30 { background: url('../images/sprites/sprite-timezones.png') 0 -240px; } /* Andorra */
+.icon-timezone-31 { background: url('../images/sprites/sprite-timezones.png') 0 -288px; } /* Angola */
+.icon-timezone-32 { background: url('../images/sprites/sprite-timezones.png') 0 -336px; } /* Anguilla */
+.icon-timezone-33 { background: url('../images/sprites/sprite-timezones.png') 0 -384px; } /* Antigua Barbuda */
+.icon-timezone-34 { background: url('../images/sprites/sprite-timezones.png') 0 -432px; } /* Argentina */
+.icon-timezone-35 { background: url('../images/sprites/sprite-timezones.png') -48px 0; } /* Armenia */
+.icon-timezone-36 { background: url('../images/sprites/sprite-timezones.png') -48px -48px; } /* Aruba */
+.icon-timezone-2, .icon-timezone-3,.icon-timezone-4,.icon-timezone-5 { background: url('../images/sprites/sprite-timezones.png') -48px -96px; } /* Australia */
+.icon-timezone-37 { background: url('../images/sprites/sprite-timezones.png') -48px -144px; } /* Austria */
+.icon-timezone-38 { background: url('../images/sprites/sprite-timezones.png') -48px -192px; } /* Azerbaijan */
+.icon-timezone-39 { background: url('../images/sprites/sprite-timezones.png') -48px -240px; } /* Bahamas */
+.icon-timezone-40 { background: url('../images/sprites/sprite-timezones.png') -48px -288px; } /* Bahrain */
+.icon-timezone-41 { background: url('../images/sprites/sprite-timezones.png') -48px -336px; } /* Bangladesh */
+.icon-timezone-42 { background: url('../images/sprites/sprite-timezones.png') -48px -384px; } /* Barbados */
+.icon-timezone-43 { background: url('../images/sprites/sprite-timezones.png') -48px -432px; } /* Belarus */
+.icon-timezone-44 { background: url('../images/sprites/sprite-timezones.png') -96px 0; } /* Belgium */
+.icon-timezone-45 { background: url('../images/sprites/sprite-timezones.png') -96px -48px; } /* Belize */
+.icon-timezone-46 { background: url('../images/sprites/sprite-timezones.png') -96px -96px; } /* Benin */
+.icon-timezone-47 { background: url('../images/sprites/sprite-timezones.png') -96px -144px; } /* Bermuda */
+.icon-timezone-48 { background: url('../images/sprites/sprite-timezones.png') -96px -192px; } /* Bhutan */
+.icon-timezone-49 { background: url('../images/sprites/sprite-timezones.png') -96px -240px; } /* Bolivia */
+.icon-timezone-50 { background: url('../images/sprites/sprite-timezones.png') -96px -288px; } /* Bonaire */
+.icon-timezone-51 { background: url('../images/sprites/sprite-timezones.png') -96px -336px; } /* Bosnia Herzegovina */
+.icon-timezone-52 { background: url('../images/sprites/sprite-timezones.png') -96px -384px; } /* Botswana */
+.icon-timezone-53, .icon-timezone-54, .icon-timezone-55, .icon-timezone-56, .icon-timezone-57, .icon-timezone-58 { background: url('../images/sprites/sprite-timezones.png') -96px -432px; } /* Brazil */
+.icon-timezone-59 { background: url('../images/sprites/sprite-timezones.png') -144px 0; } /* Brunei */
+.icon-timezone-60 { background: url('../images/sprites/sprite-timezones.png') -144px -48px; } /* Bulgaria */
+.icon-timezone-61 { background: url('../images/sprites/sprite-timezones.png') -144px -96px; } /* Burkina Faso */
+.icon-timezone-62 { background: url('../images/sprites/sprite-timezones.png') -144px -144px; } /* Burundi */
+.icon-timezone-63 { background: url('../images/sprites/sprite-timezones.png') -144px -192px; } /* Cambodia */
+.icon-timezone-64 { background: url('../images/sprites/sprite-timezones.png') -144px -240px; } /* Cameroon */
+.icon-timezone-15, .icon-timezone-16, .icon-timezone-17, .icon-timezone-18, .icon-timezone-19, .icon-timezone-20, .icon-timezone-21, .icon-timezone-22, .icon-timezone-23 { background: url('../images/sprites/sprite-timezones.png') -144px -288px; } /* Canada */
+.icon-timezone-246 { background: url('../images/sprites/sprite-timezones.png') -144px -336px; } /* Canary Islands */
+.icon-timezone-65 { background: url('../images/sprites/sprite-timezones.png') -144px -384px; } /* Cape Verde */
+.icon-timezone-66 { background: url('../images/sprites/sprite-timezones.png') -144px -432px; } /* Cayman Islands */
+.icon-timezone-67 { background: url('../images/sprites/sprite-timezones.png') -192px 0; } /* Central African Republic */
+.icon-timezone-68 { background: url('../images/sprites/sprite-timezones.png') -192px -48px; } /* Chad */
+.icon-timezone-69 { background: url('../images/sprites/sprite-timezones.png') -192px -96px; } /* Chile */
+.icon-timezone-70 { background: url('../images/sprites/sprite-timezones.png') -192px -144px; } /* China */
+.icon-timezone-71 { background: url('../images/sprites/sprite-timezones.png') -192px -192px; } /* Christmas Island */
+.icon-timezone-72 { background: url('../images/sprites/sprite-timezones.png') -192px -240px; } /* Cocos Islands */
+.icon-timezone-73 { background: url('../images/sprites/sprite-timezones.png') -192px -288px; } /* Columbia */
+.icon-timezone-74 { background: url('../images/sprites/sprite-timezones.png') -192px -336px; } /* Comoros */
+.icon-timezone-75 { background: url('../images/sprites/sprite-timezones.png') -192px -384px; } /* Cook Islands */
+.icon-timezone-76 { background: url('../images/sprites/sprite-timezones.png') -192px -432px; } /* Costa Rica */
+.icon-timezone-77 { background: url('../images/sprites/sprite-timezones.png') -240px 0; } /* Cote D'Ivoire */
+.icon-timezone-78 { background: url('../images/sprites/sprite-timezones.png') -240px -48px; } /* Croatia */
+.icon-timezone-79 { background: url('../images/sprites/sprite-timezones.png') -240px -96px; } /* Cuba */
+.icon-timezone-80 { background: url('../images/sprites/sprite-timezones.png') -240px -144px; } /* Curacao */
+.icon-timezone-81 { background: url('../images/sprites/sprite-timezones.png') -240px -192px; } /* Cyprus */
+.icon-timezone-82 { background: url('../images/sprites/sprite-timezones.png') -240px -240px; } /* Czech Republic */
+.icon-timezone-83 { background: url('../images/sprites/sprite-timezones.png') -240px -288px; } /* Denmark */
+.icon-timezone-84 { background: url('../images/sprites/sprite-timezones.png') -240px -336px; } /* Djibouti */
+.icon-timezone-85 { background: url('../images/sprites/sprite-timezones.png') -240px -384px; } /* Dominica */
+.icon-timezone-86 { background: url('../images/sprites/sprite-timezones.png') -240px -432px; } /* Dominican Republic */
+.icon-timezone-87 { background: url('../images/sprites/sprite-timezones.png') -288px 0; } /* East Timor */
+.icon-timezone-88, .icon-timezone-89 { background: url('../images/sprites/sprite-timezones.png') -288px -48px; } /* Ecuador */
+.icon-timezone-90 { background: url('../images/sprites/sprite-timezones.png') -288px -96px; } /* Egypt */
+.icon-timezone-91 { background: url('../images/sprites/sprite-timezones.png') -288px -144px; } /* El Salvador */
+.icon-timezone-92 { background: url('../images/sprites/sprite-timezones.png') -288px -192px; } /* Equatorial Guinea */
+.icon-timezone-93 { background: url('../images/sprites/sprite-timezones.png') -288px -240px; } /* Eritrea */
+.icon-timezone-94 { background: url('../images/sprites/sprite-timezones.png') -288px -288px; } /* Estonia */
+.icon-timezone-95 { background: url('../images/sprites/sprite-timezones.png') -288px -336px; } /* Ethiopia */
+.icon-timezone-96 { background: url('../images/sprites/sprite-timezones.png') -288px -384px; } /* Falkland Islands */
+.icon-timezone-97 { background: url('../images/sprites/sprite-timezones.png') -288px -432px; } /* Faroes */
+.icon-timezone-100 { background: url('../images/sprites/sprite-timezones.png') -336px 0; } /* Fiji */
+.icon-timezone-101 { background: url('../images/sprites/sprite-timezones.png') -336px -48px; } /* Finland */
+.icon-timezone-102, .icon-timezone-216 { background: url('../images/sprites/sprite-timezones.png') -336px -96px; } /* France */
+.icon-timezone-103 { background: url('../images/sprites/sprite-timezones.png') -336px -144px; } /* French Guiana */
+.icon-timezone-107 { background: url('../images/sprites/sprite-timezones.png') -336px -192px; } /* Gabon */
+.icon-timezone-247 { background: url('../images/sprites/sprite-timezones.png') -336px -240px; } /* Galicia */
+.icon-timezone-108 { background: url('../images/sprites/sprite-timezones.png') -336px -288px; } /* Gambia */
+.icon-timezone-109 { background: url('../images/sprites/sprite-timezones.png') -336px -336px; } /* Georgia */
+.icon-timezone-110 { background: url('../images/sprites/sprite-timezones.png') -336px -384px; } /* Germany */
+.icon-timezone-111 { background: url('../images/sprites/sprite-timezones.png') -336px -432px; } /* Ghana */
+.icon-timezone-112 { background: url('../images/sprites/sprite-timezones.png') -384px 0; } /* Gibraltar */
+.icon-timezone-113 { background: url('../images/sprites/sprite-timezones.png') -384px -48px; } /* Greece */
+.icon-timezone-114, .icon-timezone-115, .icon-timezone-116, .icon-timezone-117 { background: url('../images/sprites/sprite-timezones.png') -384px -96px; } /* Greenland */
+.icon-timezone-118 { background: url('../images/sprites/sprite-timezones.png') -384px -144px; } /* Grenada */
+.icon-timezone-119 { background: url('../images/sprites/sprite-timezones.png') -384px -192px; } /* Guadeloupe */
+.icon-timezone-120 { background: url('../images/sprites/sprite-timezones.png') -384px -240px; } /* Guam */
+.icon-timezone-121 { background: url('../images/sprites/sprite-timezones.png') -384px -288px; } /* Guatemala */
+.icon-timezone-122 { background: url('../images/sprites/sprite-timezones.png') -384px -336px; } /* Guernsey */
+.icon-timezone-123 { background: url('../images/sprites/sprite-timezones.png') -384px -384px; } /* Guinea */
+.icon-timezone-124 { background: url('../images/sprites/sprite-timezones.png') -384px -432px; } /* Guinea Bissau */
+.icon-timezone-125 { background: url('../images/sprites/sprite-timezones.png') -432px 0; } /* Guyana */
+.icon-timezone-126 { background: url('../images/sprites/sprite-timezones.png') -432px -48px; } /* Haiti */
+.icon-timezone-127 { background: url('../images/sprites/sprite-timezones.png') -432px -96px; } /* Honduras */
+.icon-timezone-128 { background: url('../images/sprites/sprite-timezones.png') -432px -144px; } /* Hong Kong */
+.icon-timezone-129 { background: url('../images/sprites/sprite-timezones.png') -432px -192px; } /* Hungary */
+.icon-timezone-130 { background: url('../images/sprites/sprite-timezones.png') -432px -240px; } /* Iceland */
+.icon-timezone-131 { background: url('../images/sprites/sprite-timezones.png') -432px -288px; } /* India */
+.icon-timezone-132 { background: url('../images/sprites/sprite-timezones.png') -432px -336px; } /* Indonesia */
+.icon-timezone-133 { background: url('../images/sprites/sprite-timezones.png') -432px -384px; } /* Iran */
+.icon-timezone-134 { background: url('../images/sprites/sprite-timezones.png') -432px -432px; } /* Iraq */
+.icon-timezone-135 { background: url('../images/sprites/sprite-timezones.png') -480px 0; } /* Ireland */
+.icon-timezone-136 { background: url('../images/sprites/sprite-timezones.png') -480px -48px; } /* Isle of Man */
+.icon-timezone-137 { background: url('../images/sprites/sprite-timezones.png') -480px -96px; } /* Israel */
+.icon-timezone-138 { background: url('../images/sprites/sprite-timezones.png') -480px -144px; } /* Italy */
+.icon-timezone-139 { background: url('../images/sprites/sprite-timezones.png') -480px -192px; } /* Jamaica */
+.icon-timezone-140 { background: url('../images/sprites/sprite-timezones.png') -480px -240px; } /* Japan */
+.icon-timezone-141 { background: url('../images/sprites/sprite-timezones.png') -480px -288px; } /* Jersey */
+.icon-timezone-142 { background: url('../images/sprites/sprite-timezones.png') -480px -336px; } /* Jordan */
+.icon-timezone-143, .icon-timezone-144 { background: url('../images/sprites/sprite-timezones.png') -480px -384px; } /* Kazakhstan */
+.icon-timezone-145 { background: url('../images/sprites/sprite-timezones.png') -480px -432px; } /* Kenya */
+.icon-timezone-146,.icon-timezone-147, .icon-timezone-148 { background: url('../images/sprites/sprite-timezones.png') -528px 0; } /* Kiribati */
+.icon-timezone-149 { background: url('../images/sprites/sprite-timezones.png') -528px -48px; } /* Kuwait */
+.icon-timezone-150 { background: url('../images/sprites/sprite-timezones.png') -528px -96px; } /* Kyrgyzstan */
+.icon-timezone-151 { background: url('../images/sprites/sprite-timezones.png') -528px -144px; } /* Laos */
+.icon-timezone-152 { background: url('../images/sprites/sprite-timezones.png') -528px -192px; } /* Latvia */
+.icon-timezone-153 { background: url('../images/sprites/sprite-timezones.png') -528px -240px; } /* Lebanon */
+.icon-timezone-154 { background: url('../images/sprites/sprite-timezones.png') -528px -288px; } /* Lesotho */
+.icon-timezone-155 { background: url('../images/sprites/sprite-timezones.png') -528px -336px; } /* Liberia */
+.icon-timezone-156 { background: url('../images/sprites/sprite-timezones.png') -528px -384px; } /* Libya */
+.icon-timezone-157 { background: url('../images/sprites/sprite-timezones.png') -528px -432px; } /* Liechtenstein */
+.icon-timezone-158 { background: url('../images/sprites/sprite-timezones.png') -576px 0; } /* Lithuania */
+.icon-timezone-159 { background: url('../images/sprites/sprite-timezones.png') -576px -48px; } /* Luxembourg */
+.icon-timezone-160 { background: url('../images/sprites/sprite-timezones.png') -576px -96px; } /* Macau */
+.icon-timezone-161 { background: url('../images/sprites/sprite-timezones.png') -576px -144px; } /* Macedonia */
+.icon-timezone-162 { background: url('../images/sprites/sprite-timezones.png') -576px -192px; } /* Madagascar */
+.icon-timezone-163 { background: url('../images/sprites/sprite-timezones.png') -576px -240px; } /* Malawi */
+.icon-timezone-164 { background: url('../images/sprites/sprite-timezones.png') -576px -288px; } /* Malaysia */
+.icon-timezone-165 { background: url('../images/sprites/sprite-timezones.png') -576px -336px; } /* Maldives */
+.icon-timezone-166 { background: url('../images/sprites/sprite-timezones.png') -576px -384px; } /* Mali */
+.icon-timezone-167 { background: url('../images/sprites/sprite-timezones.png') -576px -432px; } /* Malta */
+.icon-timezone-168 { background: url('../images/sprites/sprite-timezones.png') -624px 0; } /* Marshall Islands */
+.icon-timezone-169 { background: url('../images/sprites/sprite-timezones.png') -624px -48px; } /* Martinique */
+.icon-timezone-170 { background: url('../images/sprites/sprite-timezones.png') -624px -96px; } /* Mauritania */
+.icon-timezone-171 { background: url('../images/sprites/sprite-timezones.png') -624px -144px; } /* Mauritius */
+.icon-timezone-172 { background: url('../images/sprites/sprite-timezones.png') -624px -192px; } /* Mayotte */
+.icon-timezone-173, .icon-timezone-174, .icon-timezone-175, .icon-timezone-176 { background: url('../images/sprites/sprite-timezones.png') -624px -240px; } /* Mexico */
+.icon-timezone-98, .icon-timezone-99 { background: url('../images/sprites/sprite-timezones.png') -624px -288px; } /* Micronesia */
+.icon-timezone-177 { background: url('../images/sprites/sprite-timezones.png') -624px -336px; } /* Moldova */
+.icon-timezone-178 { background: url('../images/sprites/sprite-timezones.png') -624px -384px; } /* Monaco */
+.icon-timezone-179, .icon-timezone-180, .icon-timezone-181 { background: url('../images/sprites/sprite-timezones.png') -624px -432px; } /* Mongolia */
+.icon-timezone-182 { background: url('../images/sprites/sprite-timezones.png') -672px 0; } /* Montenegro */
+.icon-timezone-183 { background: url('../images/sprites/sprite-timezones.png') -672px -48px; } /* Montserrat */
+.icon-timezone-184 { background: url('../images/sprites/sprite-timezones.png') -672px -96px; } /* Morocco */
+.icon-timezone-185 { background: url('../images/sprites/sprite-timezones.png') -672px -144px; } /* Mozambique */
+.icon-timezone-186 { background: url('../images/sprites/sprite-timezones.png') -672px -192px; } /* Myanmar */
+.icon-timezone-187 { background: url('../images/sprites/sprite-timezones.png') -672px -240px; } /* Namibia */
+.icon-timezone-188 { background: url('../images/sprites/sprite-timezones.png') -672px -288px; } /* Nauru */
+.icon-timezone-189 { background: url('../images/sprites/sprite-timezones.png') -672px -336px; } /* Nepal */
+.icon-timezone-190 { background: url('../images/sprites/sprite-timezones.png') -672px -384px; } /* Netherlands */
+.icon-timezone-191 { background: url('../images/sprites/sprite-timezones.png') -672px -432px; } /* New Caledonia */
+.icon-timezone-6 { background: url('../images/sprites/sprite-timezones.png') -720px 0; } /* New Zealand */
+.icon-timezone-192 { background: url('../images/sprites/sprite-timezones.png') -720px -48px; } /* Nicaragua */
+.icon-timezone-193 { background: url('../images/sprites/sprite-timezones.png') -720px -96px; } /* Niger */
+.icon-timezone-194 { background: url('../images/sprites/sprite-timezones.png') -720px -144px; } /* Nigeria */
+.icon-timezone-195 { background: url('../images/sprites/sprite-timezones.png') -720px -192px; } /* Niue */
+.icon-timezone-196 { background: url('../images/sprites/sprite-timezones.png') -720px -240px; } /* Norfolk Island */
+.icon-timezone-197 { background: url('../images/sprites/sprite-timezones.png') -720px -288px; } /* North Korea */
+.icon-timezone-198 { background: url('../images/sprites/sprite-timezones.png') -720px -336px; } /* Northern Mariana Islands */
+.icon-timezone-199 { background: url('../images/sprites/sprite-timezones.png') -720px -384px; } /* Norway */
+.icon-timezone-200 { background: url('../images/sprites/sprite-timezones.png') -720px -432px; } /* Oman */
+.icon-timezone-201 { background: url('../images/sprites/sprite-timezones.png') -768px 0; } /* Pakistan */
+.icon-timezone-202 { background: url('../images/sprites/sprite-timezones.png') -768px -48px; } /* Palau */
+.icon-timezone-203 { background: url('../images/sprites/sprite-timezones.png') -768px -96px; } /* Palestine */
+.icon-timezone-204 { background: url('../images/sprites/sprite-timezones.png') -768px -144px; } /* Panama */
+.icon-timezone-205 { background: url('../images/sprites/sprite-timezones.png') -768px -192px; } /* Papua New Guinea */
+.icon-timezone-206 { background: url('../images/sprites/sprite-timezones.png') -768px -240px; } /* Paraguay */
+.icon-timezone-207 { background: url('../images/sprites/sprite-timezones.png') -768px -288px; } /* Peru */
+.icon-timezone-208 { background: url('../images/sprites/sprite-timezones.png') -768px -336px; } /* Philippines */
+.icon-timezone-209 { background: url('../images/sprites/sprite-timezones.png') -768px -384px; } /* Pitcairn Islands */
+.icon-timezone-210 { background: url('../images/sprites/sprite-timezones.png') -768px -432px; } /* Poland */
+.icon-timezone-211, .icon-timezone-212 { background: url('../images/sprites/sprite-timezones.png') -816px 0; } /* Portugal */
+.icon-timezone-213 { background: url('../images/sprites/sprite-timezones.png') -816px -48px; } /* Puerto Rico */
+.icon-timezone-214 { background: url('../images/sprites/sprite-timezones.png') -816px -96px; } /* Qatar */
+.icon-timezone-215 { background: url('../images/sprites/sprite-timezones.png') -816px -144px; } /* Republic of the Congo */
+.icon-timezone-217 { background: url('../images/sprites/sprite-timezones.png') -816px -192px; } /* Romania */
+.icon-timezone-218 { background: url('../images/sprites/sprite-timezones.png') -816px -240px; } /* Russian Federation */
+.icon-timezone-219 { background: url('../images/sprites/sprite-timezones.png') -816px -288px; } /* Rwanda */
+.icon-timezone-220 { background: url('../images/sprites/sprite-timezones.png') -816px -336px; } /* Saint Barthelemy */
+.icon-timezone-221 { background: url('../images/sprites/sprite-timezones.png') -816px -384px; } /* Saint Helena */
+.icon-timezone-222 { background: url('../images/sprites/sprite-timezones.png') -816px -432px; } /* Saint Kitts Nevis */
+.icon-timezone-223 { background: url('../images/sprites/sprite-timezones.png') -864px 0; } /* Saint Lucia */
+.icon-timezone-224 { background: url('../images/sprites/sprite-timezones.png') -864px -48px; } /* Saint Martin */
+.icon-timezone-225 { background: url('../images/sprites/sprite-timezones.png') -864px -96px; } /* Saint Pierre and Miquelon */
+.icon-timezone-226 { background: url('../images/sprites/sprite-timezones.png') -864px -144px; } /* Saint Vincent */
+.icon-timezone-227 { background: url('../images/sprites/sprite-timezones.png') -864px -192px; } /* Samoa */
+.icon-timezone-228 { background: url('../images/sprites/sprite-timezones.png') -864px -240px; } /* San Marino */
+.icon-timezone-229 { background: url('../images/sprites/sprite-timezones.png') -864px -288px; } /* Sao Tome Principe */
+.icon-timezone-230 { background: url('../images/sprites/sprite-timezones.png') -864px -336px; } /* Saudi Arabia */
+.icon-timezone-231 { background: url('../images/sprites/sprite-timezones.png') -864px -384px; } /* Senegal */
+.icon-timezone-232 { background: url('../images/sprites/sprite-timezones.png') -864px -432px; } /* Serbia Yugoslavia */
+.icon-timezone-233 { background: url('../images/sprites/sprite-timezones.png') -912px 0; } /* Seychelles */
+.icon-timezone-234 { background: url('../images/sprites/sprite-timezones.png') -912px -48px; } /* Sierra Leone */
+.icon-timezone-235 { background: url('../images/sprites/sprite-timezones.png') -912px -96px; } /* Singapore */
+.icon-timezone-236 { background: url('../images/sprites/sprite-timezones.png') -912px -144px; } /* Sint Maarten */
+.icon-timezone-237 { background: url('../images/sprites/sprite-timezones.png') -912px -192px; } /* Slovakia */
+.icon-timezone-238 { background: url('../images/sprites/sprite-timezones.png') -912px -240px; } /* Slovenia */
+.icon-timezone-239 { background: url('../images/sprites/sprite-timezones.png') -912px -288px; } /* Solomon Islands */
+.icon-timezone-240 { background: url('../images/sprites/sprite-timezones.png') -912px -336px; } /* Somalia */
+.icon-timezone-241 { background: url('../images/sprites/sprite-timezones.png') -912px -384px; } /* South Africa */
+.icon-timezone-242 { background: url('../images/sprites/sprite-timezones.png') -912px -432px; } /* South Georgia */
+.icon-timezone-243 { background: url('../images/sprites/sprite-timezones.png') -960px 0; } /* South Korea */
+.icon-timezone-244 { background: url('../images/sprites/sprite-timezones.png') -960px -48px; } /* South Sudan */
+.icon-timezone-245 { background: url('../images/sprites/sprite-timezones.png') -960px -96px; } /* Spain */
+.icon-timezone-248 { background: url('../images/sprites/sprite-timezones.png') -960px -144px; } /* Sri Lanka */
+.icon-timezone-249 { background: url('../images/sprites/sprite-timezones.png') -960px -192px; } /* Sudan */
+.icon-timezone-250 { background: url('../images/sprites/sprite-timezones.png') -960px -240px; } /* Suriname */
+.icon-timezone-251 { background: url('../images/sprites/sprite-timezones.png') -960px -288px; } /* Swaziland */
+.icon-timezone-252 { background: url('../images/sprites/sprite-timezones.png') -960px -336px; } /* Sweden */
+.icon-timezone-253 { background: url('../images/sprites/sprite-timezones.png') -960px -384px; } /* Switzerland */
+.icon-timezone-254 { background: url('../images/sprites/sprite-timezones.png') -960px -432px; } /* Syria */
+.icon-timezone-104, .icon-timezone-105, .icon-timezone-106 { background: url('../images/sprites/sprite-timezones.png') -1008px 0; } /* Tahiti French Polinesia */
+.icon-timezone-255 { background: url('../images/sprites/sprite-timezones.png') -1008px -48px; } /* Taiwan */
+.icon-timezone-256 { background: url('../images/sprites/sprite-timezones.png') -1008px -96px; } /* Tajikistan */
+.icon-timezone-257 { background: url('../images/sprites/sprite-timezones.png') -1008px -144px; } /* Tanzania */
+.icon-timezone-258 { background: url('../images/sprites/sprite-timezones.png') -1008px -192px; } /* Thailand */
+.icon-timezone-259 { background: url('../images/sprites/sprite-timezones.png') -1008px -240px; } /* Togo */
+.icon-timezone-260 { background: url('../images/sprites/sprite-timezones.png') -1008px -288px; } /* Tokelau */
+.icon-timezone-261 { background: url('../images/sprites/sprite-timezones.png') -1008px -336px; } /* Tonga */
+.icon-timezone-262 { background: url('../images/sprites/sprite-timezones.png') -1008px -384px; } /* Trinidad and Tobago */
+.icon-timezone-263 { background: url('../images/sprites/sprite-timezones.png') -1008px -432px; } /* Tunisia */
+.icon-timezone-264 { background: url('../images/sprites/sprite-timezones.png') -1056px 0; } /* Turkey */
+.icon-timezone-265 { background: url('../images/sprites/sprite-timezones.png') -1056px -48px; } /* Turkmenistan */
+.icon-timezone-266 { background: url('../images/sprites/sprite-timezones.png') -1056px -96px; } /* Turks and Caicos Islands */
+.icon-timezone-267 { background: url('../images/sprites/sprite-timezones.png') -1056px -144px; } /* Tuvalu */
+.icon-timezone-268 { background: url('../images/sprites/sprite-timezones.png') -1056px -192px; } /* Uganda */
+.icon-timezone-269 { background: url('../images/sprites/sprite-timezones.png') -1056px -240px; } /* Ukraine */
+.icon-timezone-270 { background: url('../images/sprites/sprite-timezones.png') -1056px -288px; } /* United Arab Emirates */
+.icon-timezone-24 { background: url('../images/sprites/sprite-timezones.png') -1056px -336px; } /* United Kingdom */
+.icon-timezone-271 { background: url('../images/sprites/sprite-timezones.png') -1056px -384px; } /* Uruguay */
+.icon-timezone-7, .icon-timezone-8, .icon-timezone-9, .icon-timezone-10, .icon-timezone-11, .icon-timezone-12, .icon-timezone-13, .icon-timezone-14 { background: url('../images/sprites/sprite-timezones.png') -1056px -432px; } /* United States of America */
+.icon-timezone-272 { background: url('../images/sprites/sprite-timezones.png') -1104px 0; } /* Uzbekistan */
+.icon-timezone-273 { background: url('../images/sprites/sprite-timezones.png') -1104px -48px; } /* Vanutau */
+.icon-timezone-274 { background: url('../images/sprites/sprite-timezones.png') -1104px -96px; } /* Venezuela */
+.icon-timezone-275 { background: url('../images/sprites/sprite-timezones.png') -1104px -144px; } /* Vietnam */
+.icon-timezone-276 { background: url('../images/sprites/sprite-timezones.png') -1104px -192px; } /* Wallis and Futuna */
+.icon-timezone-277 { background: url('../images/sprites/sprite-timezones.png') -1104px -240px; } /* Western Sahara */
+.icon-timezone-278 { background: url('../images/sprites/sprite-timezones.png') -1104px -288px; } /* Yemen */
+.icon-timezone-279 { background: url('../images/sprites/sprite-timezones.png') -1104px -336px; } /* Zambia */
+.icon-timezone-280 { background: url('../images/sprites/sprite-timezones.png') -1104px -384px; } /* Zimbabwe */
+.icon-timezone-1 { background: url('../images/sprites/sprite-timezones.png') -1152px 0; } /* UTC */
+.icon-timezone-lotro { background: url('../images/sprites/sprite-timezones.png') -1152px -48px; } /* Lotro */

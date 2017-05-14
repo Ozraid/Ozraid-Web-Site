@@ -3,42 +3,63 @@
 	width: calc(100% - 20px);
 	padding: 10px;
 	margin: 0 0 20px 0;
-	font-size: 0;
-	line-height: 1;
 	text-align: center;
 }
-
-.carousel a {
+.carousel p {
+	margin: 0;
+	padding: 0 15px;
+}
+.carousel a, #site-content .carousel a {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-
-.carousel img {
+.carousel a, .carousel a:hover, #site-content .carousel a, #site-content .carousel a:hover {
+	font-weight: normal;
+	color: #ffffff;
+}
+.carousel img, #site-content .carousel img {
 	display: block;
 	width: 100%;
-	height: 135px;
 	margin: 0 0 10px 0;
-	background-color: #000000;
 }
-
 .carousel ul {
-	display: inline-block;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	-webkit-justify-content: space-between;
+	justify-content: space-between;;
+	flex-flow: row nowrap;
+	box-sizing: border-box;
+	width: 100%;
 	margin: 0;
-	padding: 0;
+	padding: 5px;
+	background-color: #ffffff;
+	ms-overflow-x: hidden;
+	overflow-x: hidden;
+	white-space: nowrap;
 	list-style-type: none;
 }
-
 .carousel li {
 	position: relative;
 	display: inline-block;
-	margin: 10px 0;
-	padding: 0;
-	font: 18px OpenSansBold;
+	-webkit-flex-grow: 1;
+	flex-grow: 1;
+	-webkit-flex-shrink: 1;
+	flex-shrink: 1;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0 0 10px 0;
+	font: 18px 'Humanst521 BT Light';
 	line-height: 1.2;
-	text-align: left;
+	background-color: #000000;
+	border: 5px solid #ffffff;
+	-o-transition: background .5s linear;
+	-moz-transition: background .5s linear;
+	-webkit-transition: background .5s linear;
+	transition: background .5s linear;
+	text-align: right;
 }
-
 .carousel button {
 	cursor: pointer;
 	position: absolute;
@@ -49,45 +70,26 @@
 	margin: 0;
 	padding: 0;
 	border: 0;
-	z-index: 1;
+	z-index: 500;
 }
-
 .carousel-button-left {
 	left: 10px;
 	background: url('../images/sprites/sprite-buttons.png') 0 0 no-repeat;
 }
-
 .carousel-button-right {
 	right: 10px;
 	background: url('../images/sprites/sprite-buttons.png') -40px 0 no-repeat;
 }
-
 .carousel:hover .carousel-button-left {
 	left: -10px;
 	width: 30px;
 	background: url('../images/sprites/sprite-buttons.png') -10px 0 no-repeat;
 }
-
 .carousel:hover .carousel-button-right {
 	right: -10px;
 	width: 30px;
 	background: url('../images/sprites/sprite-buttons.png') -50px 0 no-repeat;
 }
-
-.carousel-container {
-	display: inline-block;
-	width: calc(100% - 20px);
-	margin: 0 auto;
-	padding: 0;
-	font-size: 0;
-	background-color: #ffffff;
-	border-left: 10px solid #ffffff;
-	border-right: 10px solid #ffffff;
-	ms-overflow-x: hidden;
-	overflow-x: hidden;
-	white-space: nowrap;
-}
-
 .carousel-hidden, .carousel:hover .carousel-hidden {
 	display: none;
 	background-color: transparent;

@@ -2,7 +2,7 @@
 SetEnv SERVER_ADMIN ozraid@ozraid.org
 
 # Allows access to directories
-Options FollowSymLinks
+Options +FollowSymLinks
 
 # Denies access to .htaccess file
 <files .htaccess>
@@ -15,18 +15,51 @@ RewriteEngine On
 
 # Adds http://www to all URIs
 RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} !^calc\. [NC]
+RewriteCond %{HTTP_HOST} !^stats\. [NC]
 RewriteCond %{HTTP_HOST} ^([a-z.]+)$ [NC]
 RewriteRule ^(.*)$ http://www.%1/$1 [R=301,L]
 
-# Adds trailing slash to all URIs except filenames with a 2-5 character suffix
+# Adds trailing slash to all URIs except file names with a 2-5 character suffix and fragments
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_URI} !(.*)/$ [NC]
 RewriteCond %{REQUEST_URI} !(.*)\.([a-z0-9]{2,5})$ [NC]
-RewriteRule ^(.*)$ %{REQUEST_URI}/ [R=301,L]
+RewriteCond %{REQUEST_URI} !(.*)\/(#.*[^\/])$ [NC]
+RewriteRule ^(.*)$ %{REQUEST_URI}/ [R=301,L,QSA]
+
+# HTTP status error codes
+ErrorDocument 400 /
+ErrorDocument 401 /
+ErrorDocument 403 /
+ErrorDocument 404 /
+ErrorDocument 405 /
+ErrorDocument 406 /
+ErrorDocument 407 /
+ErrorDocument 408 /
+ErrorDocument 409 /
+ErrorDocument 410 /
+ErrorDocument 411 /
+ErrorDocument 412 /
+ErrorDocument 413 /
+ErrorDocument 414 /
+ErrorDocument 415 /
+ErrorDocument 416 /
+ErrorDocument 417 /
+ErrorDocument 422 /
+ErrorDocument 423 /
+ErrorDocument 424 /
+ErrorDocument 500 /
+ErrorDocument 501 /
+ErrorDocument 502 /
+ErrorDocument 503 /
+ErrorDocument 504 /
+ErrorDocument 505 /
+ErrorDocument 506 /
+ErrorDocument 507 /
+ErrorDocument 510 /
 
 # Routes all URIs via index.php
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . index.php [L]
 </IfModule>

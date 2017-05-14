@@ -14,10 +14,13 @@
 		<link rel="shortcut icon" href="images/favicons/favicon.ico" />
 		<link rel="stylesheet" href="css/fonts.css" />
 		<link rel="stylesheet" href="css/icons.css" />
+		<link rel="stylesheet" href="css/forms.css" />
+		<link rel="stylesheet" href="css/carousel.css" />
 		<link rel="stylesheet" href="css/layout-1.css" /><!-- link -->
 		<script type='text/javascript' src="js/jquery.js"></script><!-- jQuery javascript -->
 		<script type='text/javascript' src="js/page.js"></script><!-- page javascript -->
 		<script type='text/javascript' src="js/login.js"></script><!-- login javascript -->
+		<script type='text/javascript' src="js/carousel.js"></script><!-- login javascript -->
 		<style>
 			body::after { background-image: url('images/website/overlay-white.png'), url('images/backgrounds/background-0205.jpg'); }
 			#site-header { background-image: url('images/backgrounds/background-0205.jpg'); }
@@ -27,7 +30,7 @@
 		<div id="site-container">
 			<header id="site-header" class="background-yellow">
 				<div id="site-identity">
-					<div id="site-title"><a href="index.html">Ozraid</a></div><!-- #site-title -->
+					<div id="site-title"><a href="home.html">Ozraid</a></div><!-- #site-title -->
 					<div id="site-byline">A Lord of the Rings Online Raid Group &amp; Resource</div><!-- #site-byline -->
 				</div><!-- #site-identity -->
 				<div id="article-title">About</div><!-- #article-title -->
@@ -45,6 +48,7 @@
 							<li class="background-hover-yellow"><a href="#about" target="_self">About</a>
 								<ul class="background-black background-hover-li-yellow">
 									<li><a href="#">Policies</a>
+									<li><a href="#">FAQ</a>
 									<li><a href="#">Legal</a>
 								</ul>
 							</li>
@@ -70,6 +74,16 @@
 			</header><!-- header -->
 			<main>
 				<div id="site-content" class="links-yellow">
+					<h2>About Pages</h2>
+					<div id="carousel-page" class="carousel background-yellow">
+						<button class="carousel-button-left"></button>
+						<ul>
+							<li class="background-hover-yellow"><a href="#"><img src="images/backgrounds/400x225/background-0001-400x225.jpg" /><p>Policies</p></a></li>
+							<li class="background-hover-yellow"><a href="#"><img src="images/backgrounds/400x225/background-0902-400x225.jpg" /><p>FAQ</p></a></li>
+							<li class="background-hover-yellow"><a href="#"><img src="images/backgrounds/400x225/background-0205-400x225.jpg" /><p>Legal</p></a></li>
+						</ul>
+						<button class="carousel-button-right"></button>
+					</div><!-- carousel #carousel-page -->
 					<article>
 						<header>
 							<div class="info">
@@ -79,9 +93,46 @@
 								<p><span class="text-yellow updated">Last Updated: </span><time>11:07pm 10 April, 2017</time></p>
 							</div><!-- article header .info -->
 						</header><!-- article header -->
-						<p>Some text...</p>
+						<figure class="figure-75 align-center background-pin-yellow">
+							<img src="images/backgrounds/400x225/background-0000-400x225.jpg" />
+							This is a figcaption.
+						</figure>
 						<p>Some more text...</p>
+						<p><input type="checkbox" name="test" id="test" /><label for="test" class="checkbox checkbox-red">Lorem ipsum </label></p>
+						<p>Some more text...</p>
+						<p><input type="radio" name="gender"  id="male" /><label for="male" class="radio radio-red">Male</label></p>
+						<p><input type="radio" name="gender"  id="female" /><label for="female" class="radio radio-green">Female</label</p>
+						<p><input type="radio" name="gender"  id="other" /><label for="other" class="radio radio-blue">Other</label</p>
 						<p>Another line of text...</p>
+						<ol class="list-text list-style-numeric background-list-black">
+							<li>Ordered List - circular shape</li>
+							<li>Test 1 2 3...
+							<ol>
+									<li>Test 1 2 3...</li>
+									<li>Test 1 2 3...
+										<ol>
+											<li>Test 1 2 3...</li>
+											<li>Test 1 2 3...</li>
+											<li>Test 1 2 3...</li>
+										</ol>
+									</li>
+									<li>Test 1 2 3...</li>
+								</ol>
+							</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+						</ol>
+						<p>This is a paragraph. This shows the space between lists!</p>
+						<ul class="list-text background-list-green">
+							<li>Unordered List</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+							<li>Test 1 2 3...</li>
+						</ul>
 						<footer>
 							<div class="info">
 								<p><span class="text-yellow tags">Categories: </span><a href=#">Ozraid</a>, <a href=#">Lotro</a>, <a href=#">Joy</a></p>
@@ -100,7 +151,7 @@
 				</div><!-- #site-widgets-right -->
 				<div class="clear"></div>
 			</main>
-			<footer id="site-footer" class="site-footer-page background-white">
+			<footer id="site-footer" class="site-footer-page">
 				<div id="footer-widgets" class="background-yellow">
 				</div><!-- #footer-widgets -->
 				<div id="footer-byline" class="text-white background-black">Ozraid 2017</div><!-- #footer-byline -->

@@ -139,7 +139,6 @@ input[type="text"], input[type="password"] {
 }
 input[type="text"]:focus, input[type="password"]:focus {
 	background-color: #fafafa;
-	border: 1px solid #8a8a8a;
 }
 input[type="submit"] {
 	cursor: pointer;

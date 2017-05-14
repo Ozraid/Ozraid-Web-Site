@@ -1,13 +1,7 @@
 <?php
-$path = trim ( $_SERVER['REQUEST_URI'], '/' );
-$segment = explode ( '/', $path );
+namespace Ozraid;
 
-$pages = array ( 'about', 'login', 'logout', 'member', 'admin', 'articles', 'resources', 'contact', 'apply' );
+// Loads the website's Front Controller PHP file.
+require_once __DIR__ .'/includes/front-controller.php';
 
-if ( ! in_array ( $segment[0], $pages ) ) {
-	$basename = basename ( $path );
-	echo 'Cannot find error<br />Basename = ' .$basename .'<br />HTTP Response Code = ' .http_response_code();
-}
-else {
-	echo $segment[0];
-}
+print_r( $_GET );
