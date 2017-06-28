@@ -505,4 +505,4 @@ input[type='radio']:checked + .radio-black::after { background: url('../images/s
 .icon-timezone-279 { background: url('../images/sprites/sprite-timezones.png') -1104px -336px; } /* Zambia */
 .icon-timezone-280 { background: url('../images/sprites/sprite-timezones.png') -1104px -384px; } /* Zimbabwe */
 .icon-timezone-1 { background: url('../images/sprites/sprite-timezones.png') -1152px 0; } /* UTC */
-.icon-timezone-lotro { background: url('../images/sprites/sprite-timezones.png') -1152px -48px; } /* Lotro */
+.icon-timezone-lotro, .icon-timezone-281 { background: url('../images/sprites/sprite-timezones.png') -1152px -48px; } /* Lotro */
