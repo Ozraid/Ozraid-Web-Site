@@ -1,0 +1,9 @@
+id,name,description,sql
+1,INSERT,Data was added to the database $table table.,1
+2,UPDATE,Data was edited in the database $table table.,1
+3,DELETE,Data was deleted from the database $table table.,1
+4,TRUNCATE,All data was deleted from the database $table table and saved to a log file.,1
+5,CREATE,The database $table table was created.,1
+6,ALTER,The database $table table's structure was altered.,1
+7,DROP,The database $table table was deleted and saved to a log file.,1
+8,RESTORE,The database $table table was restored from a log file.,1

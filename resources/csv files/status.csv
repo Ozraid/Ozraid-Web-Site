@@ -1,0 +1,6 @@
+id,name,description
+1,Active,The player is an active participant in Ozraid events and raids.
+2,Inactive,The player has not actively participated in Ozraid events and raids for over 6 months without notification.
+3,Banned,The player has been banned from participating in Ozraid events and raids.
+4,Application Awaiting Review,The player's application to join Ozraid is awaiting review by an Ozraid Raid Leader or Administrator.
+5,Application Declined,The player's application to join Ozraid was declined by an Ozraid Raid Leader or Administrator.

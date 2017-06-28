@@ -1,0 +1,71 @@
++=====================================+
+|   OZRAID WEBSITE SOFTWARE LICENSE   |
++=====================================+
+
+
+CONTENTS
+========
+1.  Freeware License
+1.1 Legal Liability
+1.2 Images
+2.  Programming Languages
+2.1 Cascading Stylesheets (CSS3)
+2.2 Hypertext Markup Language (HTML5)
+2.3 JavaScript / ECMAScript(R)
+2.4 JSON
+2.5 jQuery
+2.6 PHP
+
+
+1. FREEWARE LICENSE
+===================
+The Ozraid website is released as freeware.
+Feel free to modify or redistribute any and all CSS, HTML, JSON, jQuery and JavaScript, and PHP files without acknowledgement, concern, or credit.
+
+1.1 Legal Liability
+--------------------------------
+The Ozraid website is released 'as is'.
+The authors are not liable or responsible for any use of the code or files that comprise the website that causes damage, destroys data, is associated with security risks or vulnerabilities, or any other issues that arise. In other words we reserve the right not to be prosecuted or sued by you if you use our code.
+
+1.2 Images
+----------
+Images from The Lord of the Rings Online MMO (Lotro) are (C) copyright Standing Stone Games LLC. Ther are used under fair use provisions. For more information visit the Lotro website at http://www.lotro.com/
+All other images are covered under Creative Commons (CC) licenses, freeware, shareware or the rights to these images have been purchased by the authors.
+
+
+2. PROGRAMMING LANGUAGES
+========================
+A programming language is code that
+
+
+2.1 Cascading Stylesheets (CSS3)
+--------------------------------
+Cascading stylesheets (CSS) is a server-side language that applies styles to markup languages such as HTML.
+The Ozraid website is CSS3 compliant. It has not been designed to be backwards compatible with browsers or devices that are not CSS3 compliant. If you're using Internet Explorer version 6, we recommend you upgrade your browser!
+
+2.1 Hypertext Markup Language (HTML5)
+-------------------------------------
+Hypertext Markup Language (HTML) is a client-side language that formats data to be displayed as a webpage.
+The Ozraid website is HTML5 compliant.
+
+2.1 JavaScript / ECMAScript(R)
+------------------------------
+JavaScript (officially called ECMAScript(R)) is a client-side programming language.
+JavaScript is a trademark of Oracle Corporation in the United States. It is used under license for technology invented and implemented by Netscape Communications and current entities such as the Mozilla Foundation.
+
+2.2 JSON
+--------
+JSON (JavaScript Object Notation) is a format that allows programming languages to exchange data.
+For more information visit the JSON website at http://json.org/
+
+2.3 jQuery
+----------
+jQuery is a JavaScript library. It is used under the terms of the MIT license, a copy of which can be found at https://tldrlegal.com/license/mit-license
+For more information visit the jQuery Foundation's license page at https://jquery.org/license/
+
+2.4 PHP
+-------
+PHP is a server-side programming language by the PHP Group http://php.net/credits.php
+PHP is distributed under the PHP License v 3.01 http://php.net/license/
+The PHP license is an Open Source license, certified by the Open Source Initiative.
+Some files have been contributed under other (compatible) licenses and carry additional requirements and copyright information. This is indicated in the license + copyright comment block at the top of the source file.

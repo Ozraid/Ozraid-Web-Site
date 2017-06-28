@@ -1,0 +1,282 @@
+id,name,php
+1,Universal Time Coordinated (UTC),UTC
+2,Australian - Eastern,Australia/Canberra
+3,Australian - Queensland,Australia/Brisbane
+4,Australian - Central,Australia/Adelaide
+5,Australian - Western,Australia/Perth
+6,New Zealand,Pacific/Auckland
+7,United States - Eastern,America/New_York
+8,United States - Central,America/Chicago
+9,United States - Mountain,America/Denver
+10,United States - Mountain (No DST),America/Phoenix
+11,United States - Pacific,America/Los_Angeles
+12,United States - Alaska,America/Anchorage
+13,United States - Hawaii,America/Adak
+14,United States - Hawaii (No DST),Pacific/Honolulu
+15,Canada - Eastern,America/New_York
+16,Canada - Central,America/Chicago
+17,Canada - Mountain,America/Denver
+18,Canada - Mountain (No DST),America/Phoenix
+19,Canada - Pacific,America/Los_Angeles
+20,Canada - Newfoundland,Canada/Newfoundland
+21,Canada - East-Saskatchewan,Canada/East-Saskatchewan
+22,Canada - Saskatchewan,Canada/Saskatchewan
+23,Canada - Yukon,Canada/Yukon
+24,United Kingdom, Europe/London
+25,Afghanistan, Asia/Kabul
+26,Aland Islands, Europe/Mariehamn
+27,Albania, Europe/Tirane
+28,Algeria, Africa/Algiers
+29,American Samoa, Pacific/Pago_Pago
+30,Andorra, Europe/Andorra
+31,Angola, Africa/Luanda
+32,Anguilla, America/Anguilla
+33,Antigua and Barbuda, America/Antigua
+34,Argentina, America/Argentina/Buenos_Aires
+35,Armenia, Asia/Yerevan
+36,Aruba, America/Aruba
+37,Austria, Europe/Vienna
+38,Azerbaijan, Asia/Baku
+39,Bahamas, America/Nassau
+40,Bahrain, Asia/Bahrain
+41,Bangladesh, Asia/Dhaka
+42,Barbados, America/Barbados
+43,Belarus, Europe/Minsk
+44,Belgium, Europe/Brussels
+45,Belize, America/Belize
+46,Benin, Africa/Porto-Novo
+47,Bermuda, Atlantic/Bermuda
+48,Bhutan, Asia/Thimphu
+49,Bolivia, America/La_Paz
+50,Bonaire,America/Kralendijk
+51,Bosnia and Herzegovina, Europe/Sarajevo
+52,Botswana, Africa/Gaborone
+53,Brazil - BRT +1, America/Noronha
+54,Brazil - BRT, America/Fortaleza
+55,Brazil - BRT (No DST), America/Sao_Paulo
+56,Brazil - BRT -1, America/Cuiaba
+57,Brazil - BRT -1 (No DST), America/Boa_Vista
+58,Brazil - BRT -2, America/Rio_Branco
+59,Brunei Darussalam, Asia/Brunei
+60,Bulgaria, Europe/Sofia
+61,Burkina Faso, Africa/Ouagadougou
+62,Burundi, Africa/Bujumbura
+63,Cambodia, Asia/Phnom_Penh
+64,Cameroon, Africa/Douala
+65,Cape Verde, Atlantic/Cape_Verde
+66,Cayman Islands, America/Cayman
+67,Central African Republic, Africa/Bangui
+68,Chad, Africa/Ndjamena
+69,Chile, America/Santiago
+70,China, Asia/Shanghai
+71,Christmas Island, Indian/Christmas
+72,Cocos Islands, Indian/Cocos
+73,Colombia, America/Bogota
+74,Comoros, Indian/Comoro
+75,Cook Islands, Pacific/Rarotonga
+76,Costa Rica, America/Costa_Rica
+77,Cote D'lvoire, Africa/Abidjan
+78,Croatia, Europe/Zagreb
+79,Cuba, America/Havana
+80,Curacao, America/Curacao
+81,Cyprus, Asia/Nicosia
+82,Czech Republic, Europe/Prague
+83,Denmark, Europe/Copenhagen
+84,Djibouti, Africa/Djibouti
+85,Dominica, America/Dominica
+86,Dominican Republic, America/Santo_Domingo
+87,East Timor, Asia/Dili
+88,Ecuador, America/Guayaquil
+89,Ecuador - Galapagos Islands, Pacific/Galapagos
+90,Egypt, Africa/Cairo
+91,El Salvador, America/El_Salvador
+92,Equatorial Guinea, Africa/Malabo
+93,Eritrea, Africa/Asmara
+94,Estonia, Europe/Tallinn
+95,Ethiopia, Africa/Addis_Ababa
+96,Falkland Islands (Malvinas), Atlantic/Stanley
+97,Faroe Islands, Atlantic/Faroe
+98,Federated States of Micronesia - UTC +10, Pacific/Chuuk
+99,Federated States of Micronesia - UTC +11, Pacific/Kosrae
+100,Fiji, Pacific/Fiji
+101,Finland, Europe/Helsinki
+102,France, Europe/Paris
+103,French Guiana, America/Cayenne
+104,French Polynesia, Pacific/Tahiti
+105,French Polynesia - Gambier Islands, Pacific/Gambier
+106,French Polynesia - Marquesas Islands, Pacific/Marquesas
+107,Gabon, Africa/Libreville
+108,Gambia, Africa/Banjul
+109,Georgia, Asia/Tbilisi
+110,Germany, Europe/Berlin
+111,Ghana, Africa/Accra
+112,Gibraltar, Europe/Gibraltar
+113,Greece, Europe/Athens
+114,Greenland - Atlantic, America/Thule
+115,Greenland - East Greenland, America/Scoresbysund
+116,Greenland - West Greenland, America/Godthab
+117,Greenland - Western Eurpoe, America/Danmarkshavn
+118,Grenada, America/Grenada
+119,Guadeloupe, America/Guadeloupe
+120,Guam, Pacific/Guam
+121,Guatemala, America/Guatemala
+122,Guernsey, Europe/Guernsey
+123,Guinea, Africa/Conakry
+124,Guinea-Bissau, Africa/Bissau
+125,Guyana, America/Guyana
+126,Haiti, America/Port-au-Prince
+127,Honduras, America/Tegucigalpa
+128,Hong Kong, Asia/Hong_Kong
+129,Hungary, Europe/Budapest
+130,Iceland, Atlantic/Reykjavik
+131,India, Asia/Kolkata
+132,Indonesia, Asia/Jakarta
+133,Iran, Asia/Tehran
+134,Iraq, Asia/Baghdad
+135,Ireland, Europe/Dublin
+136,Isle of Man, Europe/Isle_of_Man
+137,Israel, Asia/Jerusalem
+138,Italy, Europe/Rome
+139,Jamaica, America/Jamaica
+140,Japan, Asia/Tokyo
+141,Jersey, Europe/Jersey
+142,Jordan, Asia/Amman
+143,Kazakhstan, Asia/Almaty
+144,Kazakhstan - Western, Asia/Oral
+145,Kenya, Africa/Nairobi
+146,Kiribati - Gilbert Island, Pacific/Tarawa
+147,Kiribati - Line Islands, Pacific/Kiritimati
+148,Kiribati - Phoenix Island, Pacific/Enderbury
+149,Kuwait, Asia/Kuwait
+150,Kyrgyzstan, Asia/Bishkek
+151,Laos, Asia/Vientiane
+152,Latvia, Europe/Riga
+153,Lebanon, Asia/Beirut
+154,Lesotho, Africa/Maseru
+155,Liberia, Africa/Monrovia
+156,Libya, Africa/Tripoli
+157,Liechtenstein, Europe/Vaduz
+158,Lithuania, Europe/Vilnius
+159,Luxembourg, Europe/Luxembourg
+160,Macau, Asia/Macau
+161,Macedonia, Europe/Skopje
+162,Madagascar, Indian/Antananarivo
+163,Malawi, Africa/Blantyre
+164,Malaysia, Asia/Kuala_Lumpur
+165,Maldives, Indian/Maldives
+166,Mali, Africa/Bamako
+167,Malta, Europe/Malta
+168,Marshall Islands, Pacific/Majuro
+169,Martinique, America/Martinique
+170,Mauritania, Africa/Nouakchott
+171,Mauritius, Indian/Mauritius
+172,Mayotte, Indian/Mayotte
+173,Mexico - Central, America/Mexico_City
+174,Mexico - Mountain, America/Hermosillo
+175,Mexico - Northwest, America/Tijuana
+176,Mexico - Southeast, America/Cancun
+177,Moldova, Europe/Chisinau
+178,Monaco, Europe/Monaco
+179,Mongolia - Choibalsan, Asia/Choibalsan
+180,Mongolia - Hovd, Asia/Hovd
+181,Mongolia - Ulaanbaatar, Asia/Ulaanbaatar
+182,Montenegro, Europe/Podgorica
+183,Montserrat, America/Montserrat
+184,Morocco, Africa/Casablanca
+185,Mozambique, Africa/Maputo
+186,Myanmar, Asia/Rangoon
+187,Namibia, Africa/Windhoek
+188,Nauru, Pacific/Nauru
+189,Nepal, Asia/Kathmandu
+190,Netherlands, Europe/Amsterdam
+191,New Caledonia, Pacific/Noumea
+192,Nicaragua, America/Managua
+193,Niger, Africa/Niamey
+194,Nigeria, Africa/Lagos
+195,Niue, Pacific/Niue
+196,Norfolk Island, Pacific/Norfolk
+197,North Korea, Asia/Pyongyang
+198,Northern Mariana Islands, Pacific/Saipan
+199,Norway, Europe/Oslo
+200,Oman, Asia/Muscat
+201,Pakistan, Asia/Karachi
+202,Palau, Pacific/Palau
+203,Palestinian Territory, Asia/Gaza
+204,Panama, America/Panama
+205,Papua New Guinea, Pacific/Port_Moresby
+206,Paraguay, America/Asuncion
+207,Peru, America/Lima
+208,Philippines, Asia/Manila
+209,Pitcairn Islands, Pacific/Pitcairn
+210,Poland, Europe/Warsaw
+211,Portugal, Europe/Lisbon
+212,Portugal - Azores, Atlantic/Azores
+213,Puerto Rico, America/Puerto_Rico
+214,Qatar, Asia/Qatar
+215,Republic of the Congo, Africa/Brazzaville
+216,Reunion, Indian/Reunion
+217,Romania, Europe/Bucharest
+218,Russian Federation,Europe/Moscow
+219,Rwanda, Africa/Kigali
+220,Saint Bartelemey, America/St_Barthelemy
+221,Saint Helena, Atlantic/St_Helena
+222,Saint Kitts and Nevis, America/St_Kitts
+223,Saint Lucia, America/St_Lucia
+224,Saint Martin, America/Marigot
+225,Saint Pierre and Miquelon, America/Miquelon
+226,Saint Vincent and the Grenadines, America/St_Vincent
+227,Samoa, Pacific/Apia
+228,San Marino, Europe/San_Marino
+229,Sao Tome and Principe, Africa/Sao_Tome
+230,Saudi Arabia, Asia/Riyadh
+231,Senegal, Africa/Dakar
+232,Serbia, Europe/Belgrade
+233,Seychelles, Indian/Mahe
+234,Sierra Leone, Africa/Freetown
+235,Singapore, Asia/Singapore
+236,Sint Maarten, America/Lower_Princes
+237,Slovakia, Europe/Bratislava
+238,Slovenia, Europe/Ljubljana
+239,Solomon Islands, Pacific/Guadalcanal
+240,Somalia, Africa/Mogadishu
+241,South Africa, Africa/Johannesburg
+242,South Georgia and the South Sandwich Islands, Atlantic/South_Georgia
+243,South Korea, Asia/Seoul
+244,South Sudan, Africa/Juba
+245,Spain, Europe/Madrid
+246,Spain - Canary Islands, Atlantic/Canary
+247,Spain - Galicia, Africa/Ceuta
+248,Sri Lanka, Asia/Colombo
+249,Sudan, Africa/Khartoum
+250,Suriname, America/Paramaribo
+251,Swaziland, Africa/Mbabane
+252,Sweden, Europe/Stockholm
+253,Switzerland, Europe/Zurich
+254,Syria, Asia/Damascus
+255,Taiwan, Asia/Taipei
+256,Tajikistan, Asia/Dushanbe
+257,Tanzania,Africa/Dar_es_Salaam
+258,Thailand, Asia/Bangkok
+259,Togo, Africa/Lome
+260,Tokelau, Pacific/Fakaofo
+261,Tonga, Pacific/Tongatapu
+262,Trinidad and Tobago, America/Port_of_Spain
+263,Tunisia, Africa/Tunis
+264,Turkey, Europe/Istanbul
+265,Turkmenistan, Asia/Ashgabat
+266,Turks and Caicos Islands, America/Grand_Turk
+267,Tuvalu, Pacific/Funafuti
+268,Uganda, Africa/Kampala
+269,Ukraine, Europe/Kiev
+270,United Arab Emirates, Asia/Dubai
+271,Uruguay, America/Montevideo
+272,Uzbekistan, Asia/Tashkent
+273,Vanuatu, Pacific/Efate
+274,Venezuela, America/Caracas
+275,Vietnam, Asia/Ho_Chi_Minh
+276,Wallis and Futuna, Pacific/Wallis
+277,Western Sahara, Africa/El_Aaiun
+278,Yemen, Asia/Aden
+279,Zambia, Africa/Lusaka
+280,Zimbabwe, Africa/Harare
+281,Lotro,America/New_York

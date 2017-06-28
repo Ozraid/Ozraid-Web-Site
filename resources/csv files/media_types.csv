@@ -1,0 +1,6 @@
+﻿id,name,extensions
+1,Image,"bmp,gif,jpg,jpeg,png,psd,tiff"
+2,Audio,"flac,mp3,wav"
+3,Video,"3gp,asf,avchd,avi,flv,m1v,m2v,m4v,mpg,mpeg,mpe,ogg,webm"
+4,Document,"doc,docm,docx,gdoc,log,otd,pdf,rtf,txt"
+5,Spreadsheet,"csv,gsheet,ods,tab,tsv,xls,xlsm,xlsx"

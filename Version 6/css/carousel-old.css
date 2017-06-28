@@ -1,0 +1,95 @@
+.carousel {
+	position: relative;
+	width: calc(100% - 20px);
+	padding: 10px;
+	margin: 0 0 20px 0;
+	font-size: 0;
+	line-height: 1;
+	text-align: center;
+}
+
+.carousel a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.carousel img {
+	display: block;
+	width: 100%;
+	height: 135px;
+	margin: 0 0 10px 0;
+	background-color: #000000;
+}
+
+.carousel ul {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.carousel li {
+	position: relative;
+	display: inline-block;
+	margin: 10px 0;
+	padding: 0;
+	font: 18px OpenSansBold;
+	line-height: 1.2;
+	text-align: left;
+}
+
+.carousel button {
+	cursor: pointer;
+	position: absolute;
+	display: inline-block;
+	top: calc(50% - 20px);
+	width: 10px;
+	height: 40px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	z-index: 1;
+}
+
+.carousel-button-left {
+	left: 10px;
+	background: url('../images/sprites/sprite-buttons.png') 0 0 no-repeat;
+}
+
+.carousel-button-right {
+	right: 10px;
+	background: url('../images/sprites/sprite-buttons.png') -40px 0 no-repeat;
+}
+
+.carousel:hover .carousel-button-left {
+	left: -10px;
+	width: 30px;
+	background: url('../images/sprites/sprite-buttons.png') -10px 0 no-repeat;
+}
+
+.carousel:hover .carousel-button-right {
+	right: -10px;
+	width: 30px;
+	background: url('../images/sprites/sprite-buttons.png') -50px 0 no-repeat;
+}
+
+.carousel-container {
+	display: inline-block;
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	padding: 0;
+	font-size: 0;
+	background-color: #ffffff;
+	border-left: 10px solid #ffffff;
+	border-right: 10px solid #ffffff;
+	ms-overflow-x: hidden;
+	overflow-x: hidden;
+	white-space: nowrap;
+}
+
+.carousel-hidden, .carousel:hover .carousel-hidden {
+	display: none;
+	background-color: transparent;
+	background-image: none;
+}

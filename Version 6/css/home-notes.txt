@@ -1,0 +1,15 @@
+@media screen and (min-width: 1600px) {
+	p { font-size: 24px; }
+	#site-title { font-size: 72px; }
+	#site-byline { font-size: 30px; }
+	#site-content { max-width: 1170px; }
+	#menu-home li { width: 360px; }
+}
+
+@media screen and (min-width: 1920px) {
+	p { font-size: 30px; }
+	#site-title { font-size: 108px; }
+	#site-byline { font-size: 36px; }
+	#site-content { max-width: 1560px; }
+	#menu-home li { width: 480px; }
+}

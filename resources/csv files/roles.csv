@@ -1,0 +1,8 @@
+id,name,description
+1,Public,A member of the general public.
+2,Application,The player has applied to join Ozraid. Their application is pending review by an Ozraid Raid Leader or Administrator.
+3,Member,The player is an Ozraid member.
+4,Author,The player is an Ozraid member who has access to the website Admin Page to write articles.
+5,Editor,The player is an Ozraid member who has access to the website Admin Page to write and edit articles.
+6,Raid Leader,The player is an Ozraid Raid Leader who has access to multiple website Admin Page functions.
+7,Administrator,The player is an Ozraid Raid Leader or member who has access to all website Admin Page functions.

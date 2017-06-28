@@ -1,0 +1,6 @@
+﻿id,name,period
+1,End of current session,NULL
+2,1 Week,P7D
+3,2 Weeks,P14D
+4,1 Month,P1M
+5,3 Months,P3M

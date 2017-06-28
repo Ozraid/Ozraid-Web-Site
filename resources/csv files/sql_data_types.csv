@@ -1,0 +1,25 @@
+id,name,type,length,description
+1,Text,varchar,,"Data, HTML5, text or any information can be stored as text.
+Length field format: Maximum number of characters that can be stored."
+2,Date/Time,datetime,0,"Date in a 4-digit year, and 2-digit month and day format.
+Time in a 24 hour 2-digit hour, minute, and second format.
+Date and Time are separated by a space.
+Format: 'YYYY-MM-DD HH:MM:SS'. I.e. '2017-01-25 18:25:57'."
+3,Boolean,tinyint,1,"A true/false or yes/no value.
+Format: '0' or '1'.
+'0' = 'FALSE' or  'NO'.
+'1' = 'TRUE' or 'YES'."
+4,Integer,int,11,"A whole number of up to 10 digits in length.
+This is the standard format to store numbers.
+Range:  -2,147,483,648 to 4,294,967,295."
+5,Integer - Tiny,tinyint,4,"A tiny whole number of up to 3 digits in length.
+This format is good for small database table 'id' columns.
+Range: -127 to 255."
+6,Integer - Small,smallint,6,"A small whole number of up to 5 digts in length.
+Range:  -32,768 to 65,535."
+7,Integer - Large,bigint,20,"A whole number of up to 19 digits in length.
+Range:  -9,223,372,036,854,775,808 to 18,446,744,073,709,551,615."
+8,Percentage,decimal,"5,2",A percentage to two decimal points. i.e. '85.00'.
+9,Decimal,decimal,,"A decimal number.
+Length field format: '(length),(decimal places)'. i.e. '6,3'.
+'6,3' is a decimal number of up to 6 characters in length, including 3 decimal places. '1' is stored as '1.000'. '42.99' is stored as '42.990'. The largest number that can be stored is '999.999'."
